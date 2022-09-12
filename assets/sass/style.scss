@@ -1,9 +1,14 @@
 :root {
-    --skin-color: #3369d3;
-}
+    // color
+    --bmw-blue: #3369d3;
+    --white-text: #fff;
+    --light-gray: #858585;
+    --gray: #4e4e4e;
+    --dark-gray: #343434;
+    --black: #000;
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    // font
+    --open-sans: 'Open Sans', sans-serif;
+    --cairo: 'Cairo', sans-serif;
+    --roboto: 'Roboto', sans-serif;
 }
