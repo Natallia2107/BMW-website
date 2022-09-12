@@ -1,7 +1,7 @@
 :root {
     // color
     --bmw-blue: #3369d3;
-    --white-text: #fff;
+    --white: #fff;
     --light-gray: #858585;
     --gray: #4e4e4e;
     --dark-gray: #343434;
@@ -12,3 +12,69 @@
     --cairo: 'Cairo', sans-serif;
     --roboto: 'Roboto', sans-serif;
 }
+
+.underline {
+    margin-top: 20px;
+    // padding-left: 90px;
+    width: 70vw;
+    height: 1px;
+    background-color: var(--gray);
+  }
+
+.carousel {
+    .nav {
+        position: absolute;
+        display: flex;
+        margin-top: 30px;
+        margin-left: 200px;
+        font-size: 12px;
+        font-family: var(--cairo);
+        text-align: left;
+        font-weight: bold;
+        letter-spacing: 0.9px;
+        color: var(--white);
+        opacity: 1;
+        z-index: 1000000;
+
+        .new-bmw {
+            color: var(--white);
+        }
+
+        .test-drive {
+            margin-left: 50px;
+        }
+
+        .logo-bmw {
+            top: 20px;
+            left: 1589px;
+            width: 53px;
+            height: 53px;
+            background: transparent url(/img/bmw_logo.svg) 0% 0% no-repeat padding-box;
+        }
+    }
+
+    .carousel-indicators {
+        justify-content: start;
+        padding-bottom: 60px;
+    
+        .indicator-size {
+            width: 40px;
+            height: 4px;
+        }
+    
+        .active {
+            background-color: var(--bmw-blue);
+        }
+    }
+    .hero-shadow::after {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        box-shadow: inset 0 0 150px black;
+        }
+}
+
+
+hr.new4 {
+    border: 1px solid red;
+  }
