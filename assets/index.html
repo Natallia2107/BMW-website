@@ -31,8 +31,9 @@
             <!-- nav -->
             <div class="nav">
                 <div class="nav-bmw">Nowe BMW iX </div>
-                <div class="test-drive" id="#test-drive">Umów jazdę próbną</div>
-                <div class="logo-bmw" id="#home"><img src="/img/bmw_logo.svg" alt=""></div>
+                <a class="test-drive" href="#test-drive">Umów jazdę próbną</a>
+                <!-- <div class="test-drive" id="#test-drive">Umów jazdę próbną</div> -->
+                <div class="logo-bmw"><img src="/img/bmw_logo.svg" alt="logo BMW"></div>
 
                 <div class="underline"></div>
                 <div class="nav-subtitle-text">
@@ -43,7 +44,7 @@
             </div>
             <!-- title nav -->
             <div class="title">
-                <div class="logo-i"><img src="/img/bmw_i_logo.svg" alt=""></div>
+                <div class="logo-i"><img src="/img/bmw_i_logo.svg" alt="logo iX"></div>
                 <h1 class="title-bmw-i">NOWE BMW iX</h1>
                 <div class="subtitle-bmw">pionier nowej ery.</div>
             </div>
@@ -59,19 +60,19 @@
             <!-- visit button -->
             <div class="visit-button">
                 <button class="button-square" id="#test-drive">
-                    <div class="button-title">umów jazdę próbną</div>
+                    <a class="button-title" href="#test-drive">Umów jazdę próbną</a>
                 </button>
             </div>
             <!-- carousel img -->
             <div class="carousel-inner hero-shadow">
                 <div class="carousel-item active">
-                    <img src="/img/slider1.png" class="d-block w-100 hero-shadow" alt="..">
+                    <img src="/img/slider1.png" class="d-block w-100 hero-shadow" alt="Czerwone BMW iX">
                 </div>
                 <div class="carousel-item">
-                    <img src="/img/slider1.png" class="d-block w-100 hero-shadow" alt="..">
+                    <img src="/img/slider1.png" class="d-block w-100 hero-shadow" alt="Czerwone BMW iX">
                 </div>
                 <div class="carousel-item">
-                    <img src="/img/slider1.png" class="d-block w-100 hero-shadow" alt="..">
+                    <img src="/img/slider1.png" class="d-block w-100 hero-shadow" alt="Czerwone BMW iX">
                 </div>
             </div>
         </div>
@@ -79,8 +80,73 @@
 
     <!-- gallery -->
     <div class="gallery-bmw">
-        <img src="/img/d_gallery.png" alt="" class="img-gallery">
+        <img src="/img/d_gallery.png" alt="galeria zdjęć samochodów marki BMW" class="img-gallery">
     </div>
+
+    <!-- form test drive-->
+    <div class="form-container" id="test-drive">
+        <div class="bgc-figures">
+            <img src="/img/Path 12.svg" alt="figura 1" class="figure1">
+            <img src="/img/Path 13.svg" alt="figura 2" class="figure2">
+            <img src="/img/Path 14.svg" alt="figura 3" class="figure3">
+            <img src="/img/Path 15.svg" alt="figura 4" class="figure4">
+        </div>
+        <div class="bgc-car">
+            <img src="/img/bmw-ix-front.png" alt="przód samochodu BMW iX" class="car1">
+            <img src="/img/13273-2022-bmw-ix.png" alt="bok samochodu BMW iX" class="car2">
+        </div>
+
+        <div class="form-square">
+            <div class="form-title">
+                <h2 class="header-title">Umów jazdę próbną
+                    <span class="upper-title">BMW iX</span>
+                </h2>
+                <p class="form-text">Zachęcamy do ograniczenia poruszania sie i pozostania w domu.</p>
+                <p class="form-text">Jeśli jednak jazda testowa okaże się niezbędna prosimy o wypełnienie poniższego
+                    formularza.</p>
+            </div>
+            <div class="input-form">
+                <div class="form-subtitle">Wypełnij formularz swoimi danymi.</div>
+                <fieldset class="input-radio">
+                    <input type="radio" name="gender"> Pan
+                    <input type="radio" name="gender"> Pani
+                </fieldset>
+                <div class="row">
+                    <input type="text" placeholder="Imię*" class="row-input">
+                    <input type="text" placeholder="Nazwisko*" class="row-input">
+                    <input type="text" placeholder="E-mail*" class="row-input">
+                    <input type="text" placeholder="Numer telefonu*" class="row-input">
+                </div>
+
+                <button class="form-send">Wyślij</button>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- footer -->
     <div class="footer-container">
@@ -88,19 +154,19 @@
             <section class="share-link">
                 <h4 class="share-header">Dołącz do nas</h4>
                 <ul class="share-items-list">
-                    <a href="https://pl-pl.facebook.com/BMW.Polska/" target="_blank">
+                    <a href="https://pl-pl.facebook.com/BMW.Polska/" target="_blank" class="share-item-link">
                         <li class="share-item"><i class="fa-brands fa-facebook-f"></i></li>
                     </a>
-                    <a href="https://www.instagram.com/bmwpolska/" target="_blank">
+                    <a href="https://www.instagram.com/bmwpolska/" target="_blank" class="share-item-link">
                         <li class="share-item"><i class="fa-brands fa-instagram"></i></li>
                     </a>
-                    <a href="https://www.youtube.com/channel/UC3nEvaGTgjz4uSFTya7MDlg" target="_blank">
+                    <a href="https://www.youtube.com/channel/UC3nEvaGTgjz4uSFTya7MDlg" target="_blank" class="share-item-link">
                         <li class="share-item"><i class="fa-brands fa-youtube"></i></li>
                     </a>
-                    <a href="https://pl.linkedin.com/company/bmw-group-polska" target="_blank">
+                    <a href="https://pl.linkedin.com/company/bmw-group-polska" target="_blank" class="share-item-link">
                         <li class="share-item"><i class="fa-brands fa-linkedin-in"></i></li>
                     </a>
-                    <a href="https://twitter.com/bmw_polska" target="_blank">
+                    <a href="https://twitter.com/bmw_polska" target="_blank" class="share-item-link">
                         <li class="share-item"><i class="fa-brands fa-twitter"></i></li>
                     </a>
                 </ul>
