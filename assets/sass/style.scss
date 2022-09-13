@@ -231,7 +231,7 @@
         .share-link {
             display: flex;
             align-items: baseline;
-            margin-top: 60px;
+            margin-top: 40px;
             text-decoration: none;
 
             .share-header {
@@ -335,6 +335,18 @@
         margin-left: 150px;
         margin-right: 150px;
         height: 1px;
-        background-color: var(--lighter-gray);
+        background-color: rgb(187, 187, 187);
+    }
+}
+
+// main gallery
+.gallery-bmw {
+   .img-gallery {
+        margin: 0;
+        padding-top: 90px;
+        padding-bottom: 90px;
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 100%;
     }
 }
