@@ -188,10 +188,6 @@
 
 // form test drive 
 .form-container {
-    // background-image: url("/img/13273-2022-bmw-ix.png") no-repeat, url(/img/bmw-ix-front.png), url(/img/Path\ 12.svg), url(/img/Path\ 13.svg), url(/img/Path\ 14.svg), url(/img/Path\ 15.svg) no-repeat;
-    // height: 100vh;
-
-    // po lewej
     .bgc-figures {
         content: "";
         position: absolute;
@@ -243,7 +239,6 @@
         }
     }
 
-    
     .form-square {
         display: flex;
         padding: 90px;
@@ -305,7 +300,6 @@
                     margin-right: 4px;
                 }
             }
-    
             .row {
                 font-family: var(--open-sans);
                 font-weight: normal;
@@ -322,7 +316,6 @@
                 }
             }
         }
-    
         .form-send {
             padding: 15px 80px;
             margin-top: 40px;
@@ -337,7 +330,48 @@
     }
 }
 
+.page-container {
+    display: flex;
+    height: 100vh;
+    background-color: #010002a2;
+    display: none;
+    
+    .text-btn-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 400px;
+        height: 300px;
 
+        .page-title {
+            margin: 20px;
+            font-family: var(--cairo);
+            font-size: 24px;
+            text-transform: uppercase;
+            color: var(--white);
+        }
+        .page-subtitle {
+            font-family: var(--roboto);
+            font-size: 13px;
+            text-align: center;
+            color: var(--white);
+        }
+        .agree-button {
+            margin-top: 60px;
+            height: 50px;
+            width: 140px;
+            background-color: var(--bmw-blue);
+            color: var(--white);
+            border: none;
+            text-transform: uppercase; 
+            font-family: var(--cairo);
+            font-weight: bold;
+            letter-spacing: 0.7px;
+        }
+    }
+}
 
 
 
