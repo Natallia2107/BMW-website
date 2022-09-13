@@ -2,6 +2,8 @@
     // color
     --bmw-blue: #3369d3;
     --white: #fff;
+    --footer-gray: #e6e6e6;
+    --lighter-gray: #707070;
     --light-gray: #858585;
     --gray: #4e4e4e;
     --dark-gray: #343434;
@@ -14,7 +16,7 @@
 }
 
 .underline {
-    margin-top: 20px ;
+    margin-top: 20px;
     width: 70vw;
     height: 1px;
     background-color: var(--gray);
@@ -166,5 +168,173 @@
         bottom: 0; 
         right: 0;
         box-shadow: inset 10px 0px 10px black;
+    }
+}
+
+
+// .row {
+//     display: flex;
+
+//     .row::after {
+//         content: "";
+//         clear: both;
+//         display: table;
+//     }
+
+//     .column {
+//         float: left;
+//         width: 50%;
+//         padding: 5px;
+//     }
+// }
+
+
+// .dreams {
+// 	&-box {
+// 		display: flex;
+// 		flex-direction: column;
+// 		margin: 2em 0;
+// 	}
+
+// 	.car-img {
+// 		width: 100%;
+// 		margin-bottom: 1em;
+// 	}
+
+// 	&-title {
+// 		margin-bottom: 0.5em;
+//         text-transform: uppercase;
+// 	}
+
+// 	.dreams-text {
+// 		// font-size: 1.4rem;
+//         column-count: 3;
+//         column-gap: 20px;
+//         column-rule:1px solid #D1D1D1;
+// 	}
+// }
+
+
+// footer
+.footer-container {
+    background-color: var(--footer-gray);
+
+    .footer-upper {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        border-color: #bbb;
+        border-bottom-width: 1px;
+        margin-left: 20px;
+        margin-right: 150px;
+
+        .share-link {
+            display: flex;
+            align-items: baseline;
+            margin-top: 60px;
+            text-decoration: none;
+
+            .share-header {
+                display: flex;
+                font-size: 20px;
+                font-family: var(--roboto);
+                font-weight: lighter;
+                color: var(--lighter-gray);
+                text-align: start;
+                padding-left: 0;
+                padding-right: 0;
+                margin-bottom: 30px;
+                margin-right: 20px;
+            }
+
+            .share-items-list {
+                justify-content: center;
+                display: flex;
+                list-style: none;
+                padding: 0;
+                
+                .share-item {
+                    
+                    display: flex;
+                    justify-content: center;
+                    height: 45px;
+                    width: 45px;
+                    color: var(--dark-gray);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .footer-border {
+        border-style: solid;
+        border-width: 0;
+    }
+
+    .footer-bottom {
+        padding-top: 30px;
+
+        .footer-nav {
+            display: flex;
+            flex-wrap: wrap;
+
+            .footer-container {
+                // flex: 1;
+                padding-left: 150px;
+                padding-right: 50px;
+                padding-bottom: 70px;
+
+                .footer-container-header {
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-weight: 200;
+                    margin-left: 20px;
+                    color: var(--lighter-gray);
+                }
+
+                .footer-container-main {
+                    font-family: var(--roboto);
+                    font-size: 14px;
+                    list-style: none;
+                    border-color: #bbb;
+                    border-bottom-width: 1px;
+                    padding: 15px 20px 30px 20px;
+
+                    .footer-container-item {
+                        list-style: none;
+                        padding: 0 0 0.25rem;
+                    }
+                }
+            }
+        }
+    }
+    .footer-white {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #fff;
+
+        .footer-copy {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin-left: 150px;
+            margin-right: 20px;
+
+            .copy-bmw {
+                font-size: .875rem;
+                line-height: 1.25rem;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .underline-footer {
+        margin-left: 150px;
+        margin-right: 150px;
+        height: 1px;
+        background-color: var(--lighter-gray);
     }
 }
