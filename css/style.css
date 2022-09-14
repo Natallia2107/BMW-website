@@ -12,6 +12,14 @@
   --roboto: 'Roboto', sans-serif;
 }
 
+*,
+*::before *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .underline {
   margin-top: 20px;
   width: 70vw;
@@ -200,29 +208,29 @@
   margin-bottom: 20px;
 }
 
-.section .section-fact .facts-box {
+.section.section-fact .facts-box {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (170px)[3];
-      grid-template-columns: repeat(3, 170px);
-  -ms-grid-rows: (170px)[2];
-      grid-template-rows: repeat(2, 170px);
+  -ms-grid-columns: (160px)[3];
+      grid-template-columns: repeat(3, 160px);
+  -ms-grid-rows: (110px)[2];
+      grid-template-rows: repeat(2, 110px);
   gap: 10px;
 }
 
-.section .section-fact .facts-box .fact-number {
+.section.section-fact .facts-box .fact-number {
   font-family: var(--cairo);
   font-weight: bold;
   font-size: 12px;
 }
 
-.section .section-fact .facts-box .underline-fact {
+.section.section-fact .facts-box .underline-fact {
   width: 15px;
   height: 1px;
   background-color: var(--dark-gray);
 }
 
-.section .section-fact .facts-box .underline-light {
+.section.section-fact .facts-box .underline-light {
   margin-left: 15px;
   margin-top: -1px;
   width: 155px;
@@ -230,13 +238,13 @@
   background-color: var(--footer-gray);
 }
 
-.section .section-fact .facts-box .fact-text {
+.section.section-fact .facts-box .fact-text {
   font-family: var(--open-sans);
   font-weight: lighter;
   font-size: 12px;
 }
 
-.section .section-text .text-box .text-fun-fuct {
+.section.section-text .text-box .text-fun-fuct {
   margin-top: 30px;
   margin-bottom: 20px;
   font-family: var(--open-sans);
@@ -245,7 +253,7 @@
   color: var(--lighter-gray);
 }
 
-.section .section-text .text-box .text-description {
+.section.section-text .text-box .text-description {
   font-family: var(--open-sans);
   font-weight: normal;
   font-size: 14px;
@@ -559,13 +567,13 @@
       flex-wrap: wrap;
 }
 
-.footer-container .footer-bottom .footer-nav .footer-container {
+.footer-container .footer-bottom .footer-nav .footer-container-2 {
   padding-left: 150px;
   padding-right: 50px;
   padding-bottom: 70px;
 }
 
-.footer-container .footer-bottom .footer-nav .footer-container .footer-container-header {
+.footer-container .footer-bottom .footer-nav .footer-container-2 .footer-container-header {
   font-size: 20px;
   line-height: 28px;
   font-weight: 200;
@@ -573,7 +581,7 @@
   color: var(--lighter-gray);
 }
 
-.footer-container .footer-bottom .footer-nav .footer-container .footer-container-main {
+.footer-container .footer-bottom .footer-nav .footer-container-2 .footer-container-main {
   font-family: var(--roboto);
   font-size: 14px;
   list-style: none;
@@ -582,7 +590,7 @@
   padding: 15px 20px 30px 20px;
 }
 
-.footer-container .footer-bottom .footer-nav .footer-container .footer-container-main .footer-container-item {
+.footer-container .footer-bottom .footer-nav .footer-container-2 .footer-container-main .footer-container-item {
   list-style: none;
   padding: 0 0 0.25rem;
 }
@@ -624,9 +632,44 @@
   background-color: #bbbbbb;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 1200px) {
+  .title .title-bmw-i {
+    font-size: 70px;
+  }
+  .form-container .bgc-figures .figure1 {
+    bottom: 200px;
+    left: 100px;
+  }
+  .form-container .bgc-figures .figure2 {
+    top: 50px;
+    left: 150px;
+  }
+  .form-container .bgc-figures .figure3 {
+    bottom: -200px;
+    left: 400px;
+  }
+  .form-container .bgc-figures .figure4 {
+    right: 130px;
+    top: 150px;
+  }
+  .form-container .bgc-car .car1 {
+    right: 0px;
+  }
+  .form-container .bgc-car .car2 {
+    bottom: 120px;
+    left: 60px;
+  }
+  .footer-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-nav .footer-container-2 {
+    margin-left: 20px;
+    padding: 10px !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */

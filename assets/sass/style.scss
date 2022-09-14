@@ -15,6 +15,14 @@
     --roboto: 'Roboto', sans-serif;
 }
 
+*,
+*::before *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
 .underline {
     margin-top: 20px;
     width: 70vw;
@@ -190,19 +198,13 @@
         margin-bottom: 20px;
     }
 
-    .section-fact {
+    &.section-fact {
         .facts-box {
             display: grid;
-            grid-template-columns: repeat(3, 170px);
-            grid-template-rows: repeat(2, 170px);
+            grid-template-columns: repeat(3, 160px);
+            grid-template-rows: repeat(2, 110px);
             gap: 10px;
            
-            // margin-top: 10px;
-            
-            // .fact-first, .fact-second, .fact-third, .fact-fourth, .fact-fifth {
-            //     max-height: 130px;
-            // }
-    
             .fact-number {
                 font-family: var(--cairo);
                 font-weight: bold;
@@ -230,7 +232,7 @@
             }
         }
     }
-    .section-text {
+    &.section-text {
         .text-box {
             .text-fun-fuct {
                 margin-top: 30px;
@@ -252,12 +254,10 @@
 
 }
 
-
-
-
 // main gallery
 .gallery-bmw {
     .img-gallery {
+
          margin: 0;
          padding-top: 90px;
          padding-bottom: 90px;
@@ -520,7 +520,7 @@
             display: flex;
             flex-wrap: wrap;
 
-            .footer-container {
+            .footer-container-2 {
                 // flex: 1;
                 padding-left: 150px;
                 padding-right: 50px;
@@ -581,21 +581,73 @@
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 // breakpoint 
-// /* Extra extra large devices (large laptops and desktops, 1400px and up) */
-// @media screen and (max-width: 1400px) {}
+@media screen and (max-width: 375px) {}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media screen and (max-width: 768px) {}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media screen and (max-width: 992px) {}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media screen and (max-width: 1200px) {
+    .title {
+        .title-bmw-i {
+            font-size: 70px;
+        }
+    }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+    .form-container {
+        .bgc-figures {
+            .figure1 {
+                bottom: 200px;
+                left: 100px;
+            }
+    
+            .figure2 {
+                top: 50px;
+                left: 150px;
+            }
+    
+            .figure3 {
+                bottom: -200px;
+                left: 400px;
+            }
+    
+            .figure4 {
+                right: 130px;
+                top: 150px;
+            }
+        }
+        .bgc-car {
+            // z-index: 100000;
+            .car1 {
+                right: 0px;
+             }
+     
+             .car2 {
+                bottom: 120px;
+                left: 60px;
+             }
+        }
+    }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+        .footer-container-2 {
+            margin-left: 20px;
+            padding: 10px !important;
+        }
+    }
+}
