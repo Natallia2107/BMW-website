@@ -192,12 +192,16 @@
 .header-nav-burger {
 	background-color: var(--black);
 	height: 100vh;
+	// display: none;
+
 	.nav-burger {
 		display: grid;
+
 		.logo-bmw {
 			margin-top: 20px;
 			margin-left: 300px;
 		}
+
 		.underline-burger {
 			margin-top: 30px;
 			height: 1px;
@@ -205,6 +209,7 @@
 			background-color: var(--gray);
 			align-items: start;
 		}
+
 		.nav-close {
 			margin-top: 15px;
 			margin-left: 320px;
@@ -212,12 +217,14 @@
 			font-size: 30px;
 			cursor: pointer;
 		}
+
 		.nav-links-box {
 			margin-top: auto;
 			display: grid;
 			justify-content: center;
 			align-items: center;
 			text-align: center;
+
 			.nav-link {
 				margin: 30px;
 				font-family: var(--cairo);
@@ -225,10 +232,12 @@
 				font-weight: normal;
 				color: var(--white);
 				text-transform: uppercase;
+
 				.decor-none {
 					text-transform: none;
 				}
 			}
+
 			.underline-link {
 				// justify-content: center;
 				margin: auto;
@@ -237,23 +246,28 @@
 				background-color: var(--gray);
 			}
 		}
+
 		.nav-button {
 			display: grid;
 			justify-content: center;
 			align-items: center;
 			text-align: center;
-			.test-drive {
+
+			.test-drive-burger {
 				margin: 60px;
 				padding: 15px 50px;
 				background-color: var(--bmw-blue);
 				border: none;
-				font-family: var(--cairo);
-				font-size: 14px;
-				font-weight: normal;
-				color: var(--white);
-				letter-spacing: 0.7px;
-				text-transform: uppercase;
 				cursor: pointer;
+
+				.test-drive-burger-text {
+					text-decoration: none;
+					text-transform: uppercase;
+					font-size: 12px;
+					font-family: var(--cairo);
+					color: var(--white);
+					letter-spacing: 0.7px;
+				}
 			}
 		}
 	}
