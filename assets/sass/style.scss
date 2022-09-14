@@ -187,6 +187,63 @@
 	}
 }
 
+// burger menu page
+.header-nav-burger {
+	background-color: var(--black);
+	height: 100vh;
+	.nav-burger {
+		.logo-bmw {
+			display: flex;
+			align-items: end;
+		}
+		.underline-burger {
+			height: 1px;
+			width: 100px;
+			background-color: var(--footer-gray);
+			align-items: start;
+		}
+		.nav-close {
+			align-items: end;
+			background-color: var(--gray);
+		}
+		.nav-links-box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			.nav-link {
+				font-family: var(--cairo);
+				font-size: 16px;
+				font-weight: normal;
+				color: var(--white);
+				text-transform: uppercase;
+				.decor-none {
+					text-decoration: none;
+				}
+			}
+			.underline-link {
+				height: 1px;
+				width: 100px;
+				background-color: var(--footer-gray);
+			}
+		}
+		.nav-button {
+			.test-drive {
+				padding: 270px 50px;
+				background-color: var(--bmw-blue);
+				font-family: var(--cairo);
+				font-size: 14px;
+				font-weight: normal;
+				color: var(--white);
+				letter-spacing: 0.7px;
+				text-transform: uppercase;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+//section 
 .section {
 	margin-top: 7em;
 

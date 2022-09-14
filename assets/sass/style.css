@@ -1,0 +1,730 @@
+:root {
+  --bmw-blue: #3369d3;
+  --white: #fff;
+  --footer-gray: #e6e6e6;
+  --lighter-gray: #707070;
+  --light-gray: #858585;
+  --gray: #4e4e4e;
+  --dark-gray: #343434;
+  --black: #000;
+  --open-sans: "Open Sans", sans-serif;
+  --cairo: "Cairo", sans-serif;
+  --roboto: "Roboto", sans-serif;
+}
+
+*,
+*::before *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel .underline {
+  margin-top: 20px;
+  width: 70vw;
+  height: 1px;
+  background-color: var(--gray);
+}
+.carousel .nav {
+  position: absolute;
+  display: flex;
+  margin-top: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 12px;
+  font-family: var(--cairo);
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  color: var(--white);
+  opacity: 1;
+  z-index: 1000000;
+}
+.carousel .nav .nav-bmw {
+  color: var(--white);
+  cursor: pointer;
+}
+.carousel .nav .test-drive {
+  margin-left: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--white);
+}
+.carousel .nav .logo-bmw {
+  margin-top: 10px;
+  margin-left: auto;
+  width: 0px;
+  height: 10px;
+  background: transparent url(/img/bmw_logo.svg) 0% 0% no-repeat padding-box;
+}
+.carousel .nav .nav-subtitle-text {
+  margin-top: 20px;
+  margin-left: auto;
+  font-size: 10px;
+  font-family: var(--cairo);
+  color: var(--white);
+  text-align: right;
+  opacity: 1;
+}
+.carousel .nav .nav-subtitle-text .nav-subtitle {
+  font-weight: bold;
+}
+.carousel .nav .nav-subtitle-text .nav-subtitle .nav-subtitle-continue {
+  font-weight: 300;
+}
+.carousel .carousel-indicators {
+  justify-content: start;
+  padding-bottom: 40px;
+}
+.carousel .carousel-indicators .indicator-size {
+  width: 40px;
+  height: 4px;
+}
+.carousel .carousel-indicators .active {
+  background-color: var(--bmw-blue);
+}
+.carousel .title {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 12px;
+  font-family: var(--cairo);
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  color: var(--white);
+  opacity: 1;
+  z-index: 1000000;
+}
+.carousel .title .logi-i {
+  margin-top: 400px;
+  height: 20px;
+  width: 20px;
+}
+.carousel .title .title-bmw-i {
+  margin-top: 10px;
+  font-family: var(--cairo);
+  color: var(--white);
+  justify-content: start;
+  text-align: left;
+  font-weight: bold;
+  font-size: 40px;
+  opacity: 1;
+}
+.carousel .title .subtitle-bmw {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.carousel .visit-button {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  list-style: none;
+  opacity: 1;
+  z-index: 1000000;
+  cursor: pointer;
+}
+.carousel .visit-button .button-square {
+  padding: 15px 70px;
+  background-color: var(--bmw-blue);
+  border: none;
+}
+.carousel .visit-button .button-square .button-title {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: var(--cairo);
+  color: var(--white);
+}
+.carousel .hero-shadow::after {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -5;
+}
+
+.header-nav-burger {
+  background-color: var(--black);
+  height: 100vh;
+}
+.header-nav-burger .nav-burger .logo-bmw {
+  display: flex;
+  align-items: end;
+}
+.header-nav-burger .nav-burger .underline-burger {
+  height: 1px;
+  width: 100px;
+  background-color: var(--footer-gray);
+  align-items: start;
+}
+.header-nav-burger .nav-burger .nav-close {
+  align-items: end;
+  background-color: var(--gray);
+}
+.header-nav-burger .nav-burger .nav-links-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.header-nav-burger .nav-burger .nav-links-box .nav-link {
+  font-family: var(--cairo);
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--white);
+  text-transform: uppercase;
+}
+.header-nav-burger .nav-burger .nav-links-box .nav-link .decor-none {
+  text-decoration: none;
+}
+.header-nav-burger .nav-burger .nav-links-box .underline-link {
+  height: 1px;
+  width: 100px;
+  background-color: var(--footer-gray);
+}
+.header-nav-burger .nav-burger .nav-button .test-drive {
+  padding: 270px 50px;
+  background-color: var(--bmw-blue);
+  font-family: var(--cairo);
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--white);
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.section {
+  margin-top: 7em;
+}
+.section .section-icon {
+  color: var(--lighter-gray);
+}
+.section .section-title {
+  font-family: var(--cairo);
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+.section.section-fact .facts-box {
+  display: grid;
+  grid-template-columns: repeat(3, 160px);
+  grid-template-rows: repeat(2, 110px);
+  gap: 10px;
+}
+.section.section-fact .facts-box .fact-number {
+  font-family: var(--cairo);
+  font-weight: bold;
+  font-size: 12px;
+}
+.section.section-fact .facts-box .underline-fact {
+  width: 15px;
+  height: 1px;
+  background-color: var(--dark-gray);
+}
+.section.section-fact .facts-box .underline-light {
+  margin-left: 15px;
+  margin-top: -1px;
+  width: 155px;
+  height: 1px;
+  background-color: var(--footer-gray);
+}
+.section.section-fact .facts-box .fact-text {
+  font-family: var(--open-sans);
+  font-weight: lighter;
+  font-size: 12px;
+}
+.section.section-text .text-box .text-fun-fuct {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: var(--open-sans);
+  font-weight: lighter;
+  font-size: 20px;
+  color: var(--lighter-gray);
+}
+.section.section-text .text-box .text-description {
+  font-family: var(--open-sans);
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.gallery-bmw .img-gallery {
+  margin: 0;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.form-container .bgc-figures {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+.form-container .bgc-figures .figure1 {
+  position: absolute;
+  bottom: 300px;
+  left: 100px;
+}
+.form-container .bgc-figures .figure2 {
+  position: absolute;
+  top: 50px;
+  left: 400px;
+}
+.form-container .bgc-figures .figure3 {
+  position: absolute;
+  bottom: -40px;
+  left: 650px;
+}
+.form-container .bgc-figures .figure4 {
+  position: absolute;
+  right: 330px;
+  top: 150px;
+}
+.form-container .bgc-car {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -9;
+}
+.form-container .bgc-car .car1 {
+  position: absolute;
+  right: 90px;
+}
+.form-container .bgc-car .car2 {
+  position: absolute;
+  bottom: 120px;
+  left: 160px;
+}
+.form-container .form-square {
+  display: flex;
+  padding: 90px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  height: 800px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 3px 3px 60px rgba(0, 0, 0, 0.0705882353);
+}
+.form-container .form-square .form-title .header-title {
+  margin-bottom: 20px;
+  display: flex;
+  text-transform: uppercase;
+  font-family: var(--cairo);
+  font-weight: bold;
+  font-size: 36px;
+  text-align: left;
+}
+.form-container .form-square .form-title .header-title .upper-title {
+  text-transform: none;
+  font-size: 0.6em;
+}
+.form-container .form-square .form-title .header-title .form-text {
+  font-family: var(--open-sans);
+  font-weight: lighter;
+  font-size: 20px;
+  color: var(--lighter-gray);
+  text-align: left;
+}
+.form-container .form-square .input-form .form-subtitle {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-family: var(--cairo);
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+}
+.form-container .form-square .input-form .input-radio {
+  display: flex;
+  margin: 20px;
+  font-family: var(--open-sans);
+  font-weight: normal;
+  color: var(--lighter-gray);
+}
+.form-container .form-square .input-form .input-radio input {
+  height: 23px;
+  margin-right: 4px;
+}
+.form-container .form-square .input-form .row {
+  font-family: var(--open-sans);
+  font-weight: normal;
+  color: var(--gray);
+  font-style: 10px;
+}
+.form-container .form-square .input-form .row .row-input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  height: 45px;
+  width: 70%;
+  border: 1px solid var(--footer-gray);
+}
+.form-container .form-square .form-send {
+  padding: 15px 80px;
+  margin-top: 40px;
+  background-color: var(--bmw-blue);
+  border: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: var(--cairo);
+  color: var(--white);
+  letter-spacing: 0.9px;
+}
+
+.page-container {
+  display: flex;
+  height: 100vh;
+  background-color: rgba(1, 0, 2, 0.6352941176);
+  display: none;
+}
+.page-container .text-btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 400px;
+  height: 300px;
+}
+.page-container .text-btn-container .page-title {
+  margin: 20px;
+  font-family: var(--cairo);
+  font-size: 24px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.page-container .text-btn-container .page-subtitle {
+  font-family: var(--roboto);
+  font-size: 13px;
+  text-align: center;
+  color: var(--white);
+}
+.page-container .text-btn-container .agree-button {
+  margin-top: 60px;
+  height: 50px;
+  width: 140px;
+  background-color: var(--bmw-blue);
+  color: var(--white);
+  border: none;
+  text-transform: uppercase;
+  font-family: var(--cairo);
+  font-weight: bold;
+  letter-spacing: 0.7px;
+}
+
+.footer-container {
+  background-color: var(--footer-gray);
+}
+.footer-container .footer-upper {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border-color: #bbb;
+  border-bottom-width: 1px;
+  margin-left: 20px;
+  margin-right: 150px;
+}
+.footer-container .footer-upper .share-link {
+  display: flex;
+  align-items: baseline;
+  margin-top: 40px;
+}
+.footer-container .footer-upper .share-link .share-header {
+  display: flex;
+  font-size: 20px;
+  font-family: var(--roboto);
+  font-weight: lighter;
+  color: var(--lighter-gray);
+  text-align: start;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+.footer-container .footer-upper .share-link .share-items-list {
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.footer-container .footer-upper .share-link .share-items-list .share-item-link {
+  text-decoration: none;
+}
+.footer-container .footer-upper .share-link .share-items-list .share-item {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  color: var(--dark-gray);
+  cursor: pointer;
+}
+.footer-container .footer-border {
+  border-style: solid;
+  border-width: 0;
+}
+.footer-container .footer-bottom {
+  padding-top: 30px;
+}
+.footer-container .footer-bottom .footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-container .footer-bottom .footer-nav .footer-container-2 {
+  padding-left: 150px;
+  padding-right: 50px;
+  padding-bottom: 70px;
+}
+.footer-container .footer-bottom .footer-nav .footer-container-2 .footer-container-header {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 200;
+  margin-left: 20px;
+  color: var(--lighter-gray);
+}
+.footer-container .footer-bottom .footer-nav .footer-container-2 .footer-container-main {
+  font-family: var(--roboto);
+  font-size: 14px;
+  list-style: none;
+  border-color: #bbb;
+  border-bottom-width: 1px;
+  padding: 15px 20px 30px 20px;
+}
+.footer-container .footer-bottom .footer-nav .footer-container-2 .footer-container-main .footer-container-item {
+  list-style: none;
+  padding: 0 0 0.25rem;
+}
+.footer-container .footer-white {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+}
+.footer-container .footer-white .footer-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 150px;
+  margin-right: 20px;
+}
+.footer-container .footer-white .footer-copy .copy-bmw {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 300;
+}
+.footer-container .underline-footer {
+  margin-left: 150px;
+  margin-right: 150px;
+  height: 1px;
+  background-color: rgb(187, 187, 187);
+}
+
+@media screen and (max-width: 768px) and (min-width: 375px) {
+  .carousel .underline {
+    width: 600px;
+  }
+  .carousel .nav {
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .carousel .title {
+    margin-top: 100px;
+    margin-left: 140px;
+  }
+  .carousel .title .title-bmw-i {
+    font-size: 24px;
+  }
+  .carousel .visit-button .button-square {
+    padding: 8px 40px;
+  }
+  .carousel .carousel-indicators {
+    margin-left: 70px;
+    padding-bottom: 20px;
+  }
+  .carousel .carousel-indicators .indicator-size {
+    width: 30px;
+    height: 4px;
+  }
+  .facts-box {
+    grid-template-columns: repeat(3, 160px);
+    grid-template-rows: repeat(2, 110px);
+  }
+  .form-container .bgc-figures {
+    display: none;
+  }
+  .form-container .bgc-car {
+    display: none;
+  }
+  .form-container .form-square {
+    width: 500px;
+    height: 700px;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .form-container .form-square .form-title .header-title {
+    font-size: 24px;
+  }
+  .form-container .form-square .form-title .header-title .form-text {
+    font-size: 16px;
+  }
+  .form-container .form-square .input-form .form-subtitle {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  .form-container .form-square .input-form .row .row-input {
+    margin-top: 5px;
+    height: 40px;
+  }
+  .form-container .form-square .form-send {
+    margin-top: 20px;
+  }
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-nav .footer-container-2 {
+    justify-content: center;
+    margin-left: 0px;
+    padding: 0 !important;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .carousel .underline {
+    width: 600px;
+  }
+  .carousel .nav {
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .carousel .title {
+    margin-top: 150px;
+  }
+  .carousel .title .title-bmw-i {
+    font-size: 36px;
+  }
+  .carousel .visit-button .button-square {
+    padding: 10px 65px;
+  }
+  .facts-box {
+    grid-template-columns: repeat(2, 160px) !important;
+    grid-template-rows: repeat(2, 110px);
+  }
+  .form-container .bgc-figures .figure1 {
+    bottom: 200px;
+    left: 70px;
+  }
+  .form-container .bgc-figures .figure2 {
+    top: 50px;
+    left: 90px;
+  }
+  .form-container .bgc-figures .figure3 {
+    display: none;
+  }
+  .form-container .bgc-figures .figure4 {
+    right: 90px;
+    top: 150px;
+  }
+  .form-container .bgc-car .car1 {
+    display: none;
+  }
+  .form-container .bgc-car .car2 {
+    bottom: 120px;
+    left: 60px;
+  }
+  .form-container .form-square {
+    padding: 70px;
+    width: 600px;
+    height: 700px;
+  }
+  .form-container .form-square .form-title .header-title {
+    font-size: 24px;
+  }
+  .form-container .form-square .form-title .header-title .form-text {
+    font-size: 16px;
+  }
+  .form-container .form-square .input-form .form-subtitle {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  .form-container .form-square .input-form .row .row-input {
+    margin-top: 5px;
+    height: 40px;
+  }
+  .form-container .form-square .form-send {
+    margin-top: 20px;
+  }
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-nav .footer-container-2 {
+    margin-left: 20px;
+    padding: 10px !important;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .title .title-bmw-i {
+    font-size: 70px;
+  }
+  .section.section-fact .facts-box .underline-light {
+    width: 130px;
+  }
+  .form-container .bgc-figures .figure1 {
+    bottom: 200px;
+    left: 100px;
+  }
+  .form-container .bgc-figures .figure2 {
+    top: 50px;
+    left: 150px;
+  }
+  .form-container .bgc-figures .figure3 {
+    bottom: -200px;
+    left: 400px;
+  }
+  .form-container .bgc-figures .figure4 {
+    right: 130px;
+    top: 150px;
+  }
+  .form-container .bgc-car .car1 {
+    right: 0px;
+  }
+  .form-container .bgc-car .car2 {
+    bottom: 120px;
+    left: 60px;
+  }
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-nav .footer-container-2 {
+    margin-left: 20px;
+    padding: 10px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
