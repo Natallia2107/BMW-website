@@ -20,7 +20,7 @@
   padding: 0;
 }
 
-.underline {
+.carousel .underline {
   margin-top: 20px;
   width: 70vw;
   height: 1px;
@@ -270,7 +270,7 @@
 }
 
 .form-container .bgc-figures {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -302,7 +302,7 @@
 }
 
 .form-container .bgc-car {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -620,7 +620,7 @@
 }
 
 .footer-container .footer-white .footer-copy .copy-bmw {
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 300;
 }
@@ -632,7 +632,92 @@
   background-color: #bbbbbb;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .carousel .underline {
+    width: 800px;
+  }
+  .carousel .nav {
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .carousel .title {
+    margin-top: 150px;
+  }
+  .carousel .title .title-bmw-i {
+    font-size: 36px;
+  }
+  .carousel .visit-button .button-square {
+    padding: 10px 65px;
+    background-color: var(--bmw-blue);
+    border: none;
+  }
+  .facts-box {
+    -ms-grid-columns: (160px)[2] !important;
+        grid-template-columns: repeat(2, 160px) !important;
+    -ms-grid-rows: (110px)[2];
+        grid-template-rows: repeat(2, 110px);
+  }
+  .form-container .bgc-figures .figure1 {
+    bottom: 200px;
+    left: 70px;
+  }
+  .form-container .bgc-figures .figure2 {
+    top: 50px;
+    left: 90px;
+  }
+  .form-container .bgc-figures .figure3 {
+    bottom: -100px;
+    left: 320px;
+  }
+  .form-container .bgc-figures .figure4 {
+    right: 90px;
+    top: 150px;
+  }
+  .form-container .bgc-car .car1 {
+    display: none;
+  }
+  .form-container .bgc-car .car2 {
+    bottom: 120px;
+    left: 60px;
+  }
+  .form-container .form-square {
+    padding: 70px;
+    width: 600px;
+    height: 700px;
+  }
+  .form-container .form-square .form-title .header-title {
+    font-size: 24px;
+  }
+  .form-container .form-square .form-title .header-title .form-text {
+    font-size: 16px;
+  }
+  .form-container .form-square .input-form .form-subtitle {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  .form-container .form-square .input-form .row .row-input {
+    margin-top: 5px;
+    height: 40px;
+  }
+  .form-container .form-square .form-send {
+    margin-top: 20px;
+  }
+  .footer-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-nav .footer-container-2 {
+    margin-left: 20px;
+    padding: 10px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
   .title .title-bmw-i {
     font-size: 70px;
   }

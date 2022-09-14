@@ -1,18 +1,18 @@
 :root {
-    // color
-    --bmw-blue: #3369d3;
-    --white: #fff;
-    --footer-gray: #e6e6e6;
-    --lighter-gray: #707070;
-    --light-gray: #858585;
-    --gray: #4e4e4e;
-    --dark-gray: #343434;
-    --black: #000;
+	// color
+	--bmw-blue: #3369d3;
+	--white: #fff;
+	--footer-gray: #e6e6e6;
+	--lighter-gray: #707070;
+	--light-gray: #858585;
+	--gray: #4e4e4e;
+	--dark-gray: #343434;
+	--black: #000;
 
-    // font
-    --open-sans: 'Open Sans', sans-serif;
-    --cairo: 'Cairo', sans-serif;
-    --roboto: 'Roboto', sans-serif;
+	// font
+	--open-sans: 'Open Sans', sans-serif;
+	--cairo: 'Cairo', sans-serif;
+	--roboto: 'Roboto', sans-serif;
 }
 
 *,
@@ -22,632 +22,706 @@
 	padding: 0;
 }
 
-
-.underline {
-    margin-top: 20px;
-    width: 70vw;
-    height: 1px;
-    background-color: var(--gray);
-}
-
 .carousel {
-// nav
-    .nav {
-        position: absolute;
-        display: flex;
-        margin-top: 30px;
-        margin-left: 200px;
-        margin-right: 200px;
-        font-size: 12px;
-        font-family: var(--cairo);
-        text-align: left;
-        font-weight: bold;
-        letter-spacing: 0.9px;
-        color: var(--white);
-        opacity: 1;
-        z-index: 1000000;
+	.underline {
+		margin-top: 20px;
+		width: 70vw;
+		height: 1px;
+		background-color: var(--gray);
+	}
+	// nav
+	.nav {
+		position: absolute;
+		display: flex;
+		margin-top: 30px;
+		margin-left: 200px;
+		margin-right: 200px;
+		font-size: 12px;
+		font-family: var(--cairo);
+		text-align: left;
+		font-weight: bold;
+		letter-spacing: 0.9px;
+		color: var(--white);
+		opacity: 1;
+		z-index: 1000000;
 
-        .nav-bmw {
-            color: var(--white);
-            cursor: pointer;
-        }
+		.nav-bmw {
+			color: var(--white);
+			cursor: pointer;
+		}
 
-        .test-drive {
-            margin-left: 50px;
-            text-decoration: none;
-            cursor: pointer;
-            color: var(--white);
-        }
+		.test-drive {
+			margin-left: 50px;
+			text-decoration: none;
+			cursor: pointer;
+			color: var(--white);
+		}
 
-        .logo-bmw {
-            margin-top: 10px;
-            margin-left: auto;
-            width: 0px;
-            height: 10px;
-            background: transparent url(/img/bmw_logo.svg) 0% 0% no-repeat padding-box;
-        }
+		.logo-bmw {
+			margin-top: 10px;
+			margin-left: auto;
+			width: 0px;
+			height: 10px;
+			background: transparent url(/img/bmw_logo.svg) 0% 0% no-repeat padding-box;
+		}
 
-        .nav-subtitle-text {
-            margin-top: 20px;
-            margin-left: auto;
-            font-size: 10px;
-            font-family: var(--cairo);
-            color: var(--white);
-            text-align: right;
-            opacity: 1;
+		.nav-subtitle-text {
+			margin-top: 20px;
+			margin-left: auto;
+			font-size: 10px;
+			font-family: var(--cairo);
+			color: var(--white);
+			text-align: right;
+			opacity: 1;
 
-            .nav-subtitle {
-                font-weight: bold;
-    
-                .nav-subtitle-continue {
-                    font-weight: 300;
-                }
-            }
-        }
-    }
-// carousel indicator
-    .carousel-indicators {
-        justify-content: start;
-        padding-bottom: 40px;
-    
-        .indicator-size {
-            width: 40px;
-            height: 4px;
-        }
-    
-        .active {
-            background-color: var(--bmw-blue);
-        }
-    }
+			.nav-subtitle {
+				font-weight: bold;
 
-// title nav
-    .title {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        margin-top: 200px;
-        margin-left: 200px;
-        margin-right: 200px;
-        font-size: 12px;
-        font-family: var(--cairo);
-        text-align: left;
-        font-weight: bold;
-        letter-spacing: 0.9px;
-        color: var(--white);
-        opacity: 1;
-        z-index: 1000000;
+				.nav-subtitle-continue {
+					font-weight: 300;
+				}
+			}
+		}
+	}
+	// carousel indicator
+	.carousel-indicators {
+		justify-content: start;
+		padding-bottom: 40px;
 
-        .logi-i {
-            margin-top: 400px;
-            height: 20px;
-            width: 20px;
-        }
+		.indicator-size {
+			width: 40px;
+			height: 4px;
+		}
 
-        .title-bmw-i {
-            margin-top: 10px;
-            font-family: var(--cairo);
-            color: var(--white);
-            justify-content: start;
-            text-align: left;
-            font-weight: bold;
-            font-size: 40px;
-            opacity: 1;
-        }
+		.active {
+			background-color: var(--bmw-blue);
+		}
+	}
 
-        .subtitle-bmw {
-            text-transform: uppercase;
-            font-size: 10px;
-        }
-    }
-// visit button
-    .visit-button {
-        position: absolute;
-        right: 0;
-        bottom: 20px;
-        left: 0;
-        z-index: 2;
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin-right: 15%;
-        margin-bottom: 1rem;
-        margin-left: 15%;
-        list-style: none;
-        opacity: 1;
-        z-index: 1000000;
-        cursor: pointer;
+	// title nav
+	.title {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		margin-top: 200px;
+		margin-left: 200px;
+		margin-right: 200px;
+		font-size: 12px;
+		font-family: var(--cairo);
+		text-align: left;
+		font-weight: bold;
+		letter-spacing: 0.9px;
+		color: var(--white);
+		opacity: 1;
+		z-index: 1000000;
 
-        .button-square {
-            padding: 15px 70px;
-            background-color: var(--bmw-blue);
-            border: none;
-          
-            .button-title {
-                text-decoration: none;
-                text-transform: uppercase;
-                font-size: 12px;
-                font-family: var(--cairo);
-                color: var(--white);
-            }
-        }
-    }
-//shadow carousel image
-    .hero-shadow::after {
-        content: '';
-        position: absolute;
-        top: 0; 
-        left: 0; 
-        bottom: 0; 
-        right: 0;
-        box-shadow: inset 10px 0px 10px black;
-    }
+		.logi-i {
+			margin-top: 400px;
+			height: 20px;
+			width: 20px;
+		}
+
+		.title-bmw-i {
+			margin-top: 10px;
+			font-family: var(--cairo);
+			color: var(--white);
+			justify-content: start;
+			text-align: left;
+			font-weight: bold;
+			font-size: 40px;
+			opacity: 1;
+		}
+
+		.subtitle-bmw {
+			text-transform: uppercase;
+			font-size: 10px;
+		}
+	}
+	// visit button
+	.visit-button {
+		position: absolute;
+		right: 0;
+		bottom: 20px;
+		left: 0;
+		z-index: 2;
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		margin-right: 15%;
+		margin-bottom: 1rem;
+		margin-left: 15%;
+		list-style: none;
+		opacity: 1;
+		z-index: 1000000;
+		cursor: pointer;
+
+		.button-square {
+			padding: 15px 70px;
+			background-color: var(--bmw-blue);
+			border: none;
+
+			.button-title {
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 12px;
+				font-family: var(--cairo);
+				color: var(--white);
+			}
+		}
+	}
+	//shadow carousel image
+	.hero-shadow::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		box-shadow: inset 10px 0px 10px black;
+	}
 }
 
 .section {
-    margin-top: 7em;
-    
-    .section-icon {
-        color: var(--lighter-gray);
-    }
+	margin-top: 7em;
 
-    .section-title {
-        font-family: var(--cairo);
-        font-weight: bold;
-        font-size: 36px;
-        color: var(--black);
-        margin-bottom: 20px;
-    }
+	.section-icon {
+		color: var(--lighter-gray);
+	}
 
-    &.section-fact {
-        .facts-box {
-            display: grid;
-            grid-template-columns: repeat(3, 160px);
-            grid-template-rows: repeat(2, 110px);
-            gap: 10px;
-           
-            .fact-number {
-                font-family: var(--cairo);
-                font-weight: bold;
-                font-size: 12px;
-            }
-    
-            .underline-fact {
-                width: 15px;
-                height: 1px;
-                background-color: var(--dark-gray);
-            }
-    
-            .underline-light {
-                margin-left: 15px;
-                margin-top: -1px;
-                width: 155px;
-                height: 1px;
-                background-color: var(--footer-gray);
-            }
-    
-            .fact-text {
-                font-family: var(--open-sans);
-                font-weight: lighter;
-                font-size: 12px;
-            }
-        }
-    }
-    &.section-text {
-        .text-box {
-            .text-fun-fuct {
-                margin-top: 30px;
-                margin-bottom: 20px;
-                font-family: var(--open-sans);
-                font-weight: lighter;
-                font-size: 20px;
-                color: var(--lighter-gray);
-            }
+	.section-title {
+		font-family: var(--cairo);
+		font-weight: bold;
+		font-size: 36px;
+		color: var(--black);
+		margin-bottom: 20px;
+	}
 
-            .text-description {
-                font-family: var(--open-sans);
-                font-weight: normal;
-                font-size: 14px;
-                color: var(--gray);
-            }
-        }
-    }
+	&.section-fact {
+		.facts-box {
+			display: grid;
+			grid-template-columns: repeat(3, 160px);
+			grid-template-rows: repeat(2, 110px);
+			gap: 10px;
 
+			.fact-number {
+				font-family: var(--cairo);
+				font-weight: bold;
+				font-size: 12px;
+			}
+
+			.underline-fact {
+				width: 15px;
+				height: 1px;
+				background-color: var(--dark-gray);
+			}
+
+			.underline-light {
+				margin-left: 15px;
+				margin-top: -1px;
+				width: 155px;
+				height: 1px;
+				background-color: var(--footer-gray);
+			}
+
+			.fact-text {
+				font-family: var(--open-sans);
+				font-weight: lighter;
+				font-size: 12px;
+			}
+		}
+	}
+	&.section-text {
+		.text-box {
+			.text-fun-fuct {
+				margin-top: 30px;
+				margin-bottom: 20px;
+				font-family: var(--open-sans);
+				font-weight: lighter;
+				font-size: 20px;
+				color: var(--lighter-gray);
+			}
+
+			.text-description {
+				font-family: var(--open-sans);
+				font-weight: normal;
+				font-size: 14px;
+				color: var(--gray);
+			}
+		}
+	}
 }
 
 // main gallery
 .gallery-bmw {
-    .img-gallery {
-
-         margin: 0;
-         padding-top: 90px;
-         padding-bottom: 90px;
-         padding-right: 10px;
-         padding-left: 10px;
-         width: 100%;
-     }
+	.img-gallery {
+		margin: 0;
+		padding-top: 90px;
+		padding-bottom: 90px;
+		padding-right: 10px;
+		padding-left: 10px;
+		width: 100%;
+	}
 }
 
-// form test drive 
+// form test drive
 .form-container {
-    .bgc-figures {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: -10;
+	.bgc-figures {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: -10;
 
-        .figure1 {
-            position: absolute;
-            bottom: 300px;
-            left: 100px;
-        }
+		.figure1 {
+			position: absolute;
+			bottom: 300px;
+			left: 100px;
+		}
 
-        .figure2 {
-            position: absolute;
-            top: 50px;
-            left: 400px;
-        }
+		.figure2 {
+			position: absolute;
+			top: 50px;
+			left: 400px;
+		}
 
-        .figure3 {
-            position: absolute;
-            bottom: -40px;
-            left: 650px;
-        }
+		.figure3 {
+			position: absolute;
+			bottom: -40px;
+			left: 650px;
+		}
 
-        .figure4 {
-            position: absolute;
-            right: 330px;
-            top: 150px;
-        }
-    }
+		.figure4 {
+			position: absolute;
+			right: 330px;
+			top: 150px;
+		}
+	}
 
-    .bgc-car {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: -9;
+	.bgc-car {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: -9;
 
-        .car1 {
-           position: absolute;
-           right: 90px;
-        }
+		.car1 {
+			position: absolute;
+			right: 90px;
+		}
 
-        .car2 {
-           position: absolute;
-           bottom: 120px;
-           left: 160px;
-        }
-    }
+		.car2 {
+			position: absolute;
+			bottom: 120px;
+			left: 160px;
+		}
+	}
 
-    .form-square {
-        display: flex;
-        padding: 90px;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 150px;
-        flex-direction: column;
-        // justify-content: center;
-        align-items: center;
-        width: 700px;
-        height: 800px;
-        border-radius: 8px;
-        background-color: #fff;
-        box-shadow: 3px 3px 60px #00000012;
-    
-        .form-title {
-            .header-title {
-                margin-bottom: 20px;
-                display: flex;
-                text-transform: uppercase;
-                font-family: var(--cairo);
-                font-weight: bold;
-                font-size: 36px;
-                text-align: left;
-    
-                .upper-title {
-                    text-transform: none;
-                    font-size: 0.6em;
-                }
-    
-                .form-text {
-                    font-family: var(--open-sans);
-                    font-weight: lighter;
-                    font-size: 20px;
-                    color: var(--lighter-gray);
-                    text-align: left;
-                }
-            }
-        }
-        .input-form {
-            .form-subtitle {
-                margin-top: 70px;
-                margin-bottom: 20px;
-                font-family: var(--cairo);
-                font-weight: bold;
-                font-size: 16px;
-                text-align: left;    
-            }
-    
-            .input-radio {
-                display: flex;
-                margin: 20px;
-                font-family: var(--open-sans);
-                font-weight: normal;
-                color: var(--lighter-gray);
-    
-                input {
-                    height: 23px;
-                    margin-right: 4px;
-                }
-            }
-            .row {
-                font-family: var(--open-sans);
-                font-weight: normal;
-                color:var(--gray);
-                font-style: 10px;
-    
-                .row-input {
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-                    margin-left: 20px;
-                    height: 45px;
-                    width: 70%;
-                    border: 1px solid var(--footer-gray);
-                }
-            }
-        }
-        .form-send {
-            padding: 15px 80px;
-            margin-top: 40px;
-            background-color: var(--bmw-blue);
-            border: none;
-            text-transform: uppercase;
-            font-size: 13px;
-            font-family: var(--cairo);
-            color: var(--white);
-            letter-spacing: 0.9px;
-        }
-    }
+	.form-square {
+		display: flex;
+		padding: 90px;
+		margin: auto;
+		margin-top: 50px;
+		margin-bottom: 150px;
+		flex-direction: column;
+		// justify-content: center;
+		align-items: center;
+		width: 700px;
+		height: 800px;
+		border-radius: 8px;
+		background-color: #fff;
+		box-shadow: 3px 3px 60px #00000012;
+
+		.form-title {
+			.header-title {
+				margin-bottom: 20px;
+				display: flex;
+				text-transform: uppercase;
+				font-family: var(--cairo);
+				font-weight: bold;
+				font-size: 36px;
+				text-align: left;
+
+				.upper-title {
+					text-transform: none;
+					font-size: 0.6em;
+				}
+
+				.form-text {
+					font-family: var(--open-sans);
+					font-weight: lighter;
+					font-size: 20px;
+					color: var(--lighter-gray);
+					text-align: left;
+				}
+			}
+		}
+		.input-form {
+			.form-subtitle {
+				margin-top: 70px;
+				margin-bottom: 20px;
+				font-family: var(--cairo);
+				font-weight: bold;
+				font-size: 16px;
+				text-align: left;
+			}
+
+			.input-radio {
+				display: flex;
+				margin: 20px;
+				font-family: var(--open-sans);
+				font-weight: normal;
+				color: var(--lighter-gray);
+
+				input {
+					height: 23px;
+					margin-right: 4px;
+				}
+			}
+			.row {
+				font-family: var(--open-sans);
+				font-weight: normal;
+				color: var(--gray);
+				font-style: 10px;
+
+				.row-input {
+					margin-top: 10px;
+					margin-bottom: 10px;
+					margin-left: 20px;
+					height: 45px;
+					width: 70%;
+					border: 1px solid var(--footer-gray);
+				}
+			}
+		}
+		.form-send {
+			padding: 15px 80px;
+			margin-top: 40px;
+			background-color: var(--bmw-blue);
+			border: none;
+			text-transform: uppercase;
+			font-size: 13px;
+			font-family: var(--cairo);
+			color: var(--white);
+			letter-spacing: 0.9px;
+		}
+	}
 }
 
 .page-container {
-    display: flex;
-    height: 100vh;
-    background-color: #010002a2;
-    display: none;
-    
-    .text-btn-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        width: 400px;
-        height: 300px;
+	display: flex;
+	height: 100vh;
+	background-color: #010002a2;
+	display: none;
 
-        .page-title {
-            margin: 20px;
-            font-family: var(--cairo);
-            font-size: 24px;
-            text-transform: uppercase;
-            color: var(--white);
-        }
-        .page-subtitle {
-            font-family: var(--roboto);
-            font-size: 13px;
-            text-align: center;
-            color: var(--white);
-        }
-        .agree-button {
-            margin-top: 60px;
-            height: 50px;
-            width: 140px;
-            background-color: var(--bmw-blue);
-            color: var(--white);
-            border: none;
-            text-transform: uppercase; 
-            font-family: var(--cairo);
-            font-weight: bold;
-            letter-spacing: 0.7px;
-        }
-    }
+	.text-btn-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		width: 400px;
+		height: 300px;
+
+		.page-title {
+			margin: 20px;
+			font-family: var(--cairo);
+			font-size: 24px;
+			text-transform: uppercase;
+			color: var(--white);
+		}
+		.page-subtitle {
+			font-family: var(--roboto);
+			font-size: 13px;
+			text-align: center;
+			color: var(--white);
+		}
+		.agree-button {
+			margin-top: 60px;
+			height: 50px;
+			width: 140px;
+			background-color: var(--bmw-blue);
+			color: var(--white);
+			border: none;
+			text-transform: uppercase;
+			font-family: var(--cairo);
+			font-weight: bold;
+			letter-spacing: 0.7px;
+		}
+	}
 }
-
 
 // footer
 .footer-container {
-    background-color: var(--footer-gray);
+	background-color: var(--footer-gray);
 
-    .footer-upper {
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        border-color: #bbb;
-        border-bottom-width: 1px;
-        margin-left: 20px;
-        margin-right: 150px;
+	.footer-upper {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		border-color: #bbb;
+		border-bottom-width: 1px;
+		margin-left: 20px;
+		margin-right: 150px;
 
-        .share-link {
-            display: flex;
-            align-items: baseline;
-            margin-top: 40px;
+		.share-link {
+			display: flex;
+			align-items: baseline;
+			margin-top: 40px;
 
-            .share-header {
-                display: flex;
-                font-size: 20px;
-                font-family: var(--roboto);
-                font-weight: lighter;
-                color: var(--lighter-gray);
-                text-align: start;
-                padding-left: 0;
-                padding-right: 0;
-                margin-bottom: 30px;
-                margin-right: 20px;
-            }
+			.share-header {
+				display: flex;
+				font-size: 20px;
+				font-family: var(--roboto);
+				font-weight: lighter;
+				color: var(--lighter-gray);
+				text-align: start;
+				padding-left: 0;
+				padding-right: 0;
+				margin-bottom: 30px;
+				margin-right: 20px;
+			}
 
-            .share-items-list {
-                justify-content: center;
-                display: flex;
-                list-style: none;
-                padding: 0;
+			.share-items-list {
+				justify-content: center;
+				display: flex;
+				list-style: none;
+				padding: 0;
 
-                .share-item-link {
-                    text-decoration: none;
-                }
-                
-                .share-item {
-                    display: flex;
-                    justify-content: center;
-                    height: 45px;
-                    width: 45px;
-                    color: var(--dark-gray);
-                    cursor: pointer;
-                }
-            }
-        }
-    }
+				.share-item-link {
+					text-decoration: none;
+				}
 
-    .footer-border {
-        border-style: solid;
-        border-width: 0;
-    }
+				.share-item {
+					display: flex;
+					justify-content: center;
+					height: 45px;
+					width: 45px;
+					color: var(--dark-gray);
+					cursor: pointer;
+				}
+			}
+		}
+	}
 
-    .footer-bottom {
-        padding-top: 30px;
+	.footer-border {
+		border-style: solid;
+		border-width: 0;
+	}
 
-        .footer-nav {
-            display: flex;
-            flex-wrap: wrap;
+	.footer-bottom {
+		padding-top: 30px;
 
-            .footer-container-2 {
-                // flex: 1;
-                padding-left: 150px;
-                padding-right: 50px;
-                padding-bottom: 70px;
+		.footer-nav {
+			display: flex;
+			flex-wrap: wrap;
 
-                .footer-container-header {
-                    font-size: 20px;
-                    line-height: 28px;
-                    font-weight: 200;
-                    margin-left: 20px;
-                    color: var(--lighter-gray);
-                }
+			.footer-container-2 {
+				// flex: 1;
+				padding-left: 150px;
+				padding-right: 50px;
+				padding-bottom: 70px;
 
-                .footer-container-main {
-                    font-family: var(--roboto);
-                    font-size: 14px;
-                    list-style: none;
-                    border-color: #bbb;
-                    border-bottom-width: 1px;
-                    padding: 15px 20px 30px 20px;
+				.footer-container-header {
+					font-size: 20px;
+					line-height: 28px;
+					font-weight: 200;
+					margin-left: 20px;
+					color: var(--lighter-gray);
+				}
 
-                    .footer-container-item {
-                        list-style: none;
-                        padding: 0 0 0.25rem;
-                    }
-                }
-            }
-        }
-    }
-    .footer-white {
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: #fff;
+				.footer-container-main {
+					font-family: var(--roboto);
+					font-size: 14px;
+					list-style: none;
+					border-color: #bbb;
+					border-bottom-width: 1px;
+					padding: 15px 20px 30px 20px;
 
-        .footer-copy {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            margin-left: 150px;
-            margin-right: 20px;
+					.footer-container-item {
+						list-style: none;
+						padding: 0 0 0.25rem;
+					}
+				}
+			}
+		}
+	}
+	.footer-white {
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: #fff;
 
-            .copy-bmw {
-                font-size: .875rem;
-                line-height: 1.25rem;
-                font-weight: 300;
-            }
-        }
-    }
+		.footer-copy {
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			margin-left: 150px;
+			margin-right: 20px;
 
-    .underline-footer {
-        margin-left: 150px;
-        margin-right: 150px;
-        height: 1px;
-        background-color: rgb(187, 187, 187);
-    }
+			.copy-bmw {
+				font-size: 0.875rem;
+				line-height: 1.25rem;
+				font-weight: 300;
+			}
+		}
+	}
+
+	.underline-footer {
+		margin-left: 150px;
+		margin-right: 150px;
+		height: 1px;
+		background-color: rgb(187, 187, 187);
+	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-// breakpoint 
+// breakpoint
 @media screen and (max-width: 375px) {}
 
-@media screen and (max-width: 768px) {}
-
-@media screen and (max-width: 992px) {}
-
-@media screen and (max-width: 1200px) {
-    .title {
-        .title-bmw-i {
-            font-size: 70px;
-        }
-    }
-
-    .form-container {
-        .bgc-figures {
-            .figure1 {
-                bottom: 200px;
-                left: 100px;
-            }
+@media screen and (max-width: 768px) and (min-width: 375px) {
     
-            .figure2 {
-                top: 50px;
-                left: 150px;
-            }
-    
-            .figure3 {
-                bottom: -200px;
-                left: 400px;
-            }
-    
-            .figure4 {
-                right: 130px;
-                top: 150px;
-            }
-        }
-        .bgc-car {
-            // z-index: 100000;
-            .car1 {
-                right: 0px;
-             }
-     
-             .car2 {
-                bottom: 120px;
-                left: 60px;
-             }
-        }
-    }
-
-    .footer-nav {
-        display: flex;
-        justify-content: center;
-        .footer-container-2 {
-            margin-left: 20px;
-            padding: 10px !important;
-        }
-    }
 }
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+	.carousel {
+		.underline {
+			width: 800px;
+		}
+		.nav {
+			margin-top: 20px;
+			margin-left: 100px;
+			margin-right: 100px;
+		}
+		.title {
+			margin-top: 150px;
+			.title-bmw-i {
+				font-size: 36px;
+			}
+		}
+		.visit-button {
+			.button-square {
+				padding: 10px 65px;
+				background-color: var(--bmw-blue);
+				border: none;
+			}
+		}
+	}
+	.facts-box {
+		grid-template-columns: repeat(2, 160px) !important;
+		grid-template-rows: repeat(2, 110px);
+	}
+	.form-container {
+		.bgc-figures {
+			.figure1 {
+				bottom: 200px;
+				left: 70px;
+			}
+			.figure2 {
+				top: 50px;
+				left: 90px;
+			}
+			.figure3 {
+				bottom: -100px;
+				left: 320px;
+			}
+			.figure4 {
+				right: 90px;
+				top: 150px;
+			}
+		}
+		.bgc-car {
+			.car1 {
+				display: none;
+			}
+			.car2 {
+				bottom: 120px;
+				left: 60px;
+			}
+		}
+		.form-square {
+			padding: 70px;
+			width: 600px;
+			height: 700px;
+			.form-title {
+				.header-title {
+					font-size: 24px;
+
+					.form-text {
+						font-size: 16px;
+					}
+				}
+			}
+			.input-form {
+				.form-subtitle {
+					margin-top: 30px;
+					font-size: 14px;
+				}
+				.row {
+					.row-input {
+						margin-top: 5px;
+						height: 40px;
+					}
+				}
+			}
+			.form-send {
+				margin-top: 20px;
+			}
+		}
+	}
+    .footer-nav {
+		display: flex;
+		justify-content: center;
+		.footer-container-2 {
+			margin-left: 20px;
+			padding: 10px !important;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+	.title {
+		.title-bmw-i {
+			font-size: 70px;
+		}
+	}
+	.form-container {
+		.bgc-figures {
+			.figure1 {
+				bottom: 200px;
+				left: 100px;
+			}
+			.figure2 {
+				top: 50px;
+				left: 150px;
+			}
+			.figure3 {
+				bottom: -200px;
+				left: 400px;
+			}
+			.figure4 {
+				right: 130px;
+				top: 150px;
+			}
+		}
+		.bgc-car {
+			.car1 {
+				right: 0px;
+			}
+			.car2 {
+				bottom: 120px;
+				left: 60px;
+			}
+		}
+	}
+	.footer-nav {
+		display: flex;
+		justify-content: center;
+		.footer-container-2 {
+			margin-left: 20px;
+			padding: 10px !important;
+		}
+	}
+}
+
+
