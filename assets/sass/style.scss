@@ -29,6 +29,7 @@
 		height: 1px;
 		background-color: var(--gray);
 	}
+
 	// nav
 	.nav {
 		position: absolute;
@@ -83,6 +84,7 @@
 			}
 		}
 	}
+
 	// carousel indicator
 	.carousel-indicators {
 		justify-content: start;
@@ -137,6 +139,7 @@
 			font-size: 10px;
 		}
 	}
+
 	// visit button
 	.visit-button {
 		position: absolute;
@@ -323,6 +326,7 @@
 			}
 		}
 	}
+
 	&.section-text {
 		.text-box {
 			.text-fun-fuct {
@@ -358,6 +362,8 @@
 
 // form test drive
 .form-container {
+	position: relative;
+	overflow: hidden;
 	.bgc-figures {
 		content: '';
 		position: absolute;
@@ -390,17 +396,28 @@
 		}
 	}
 
+	.car1 {
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		right: 0;
+		// left: 55%;
+	}
+
+	.car2 {
+		position: absolute;
+		z-index: -1;
+		// left: 10%;
+		left: 0;
+		bottom: 0;
+	}
+
 	.bgc-car {
 		content: '';
 		position: absolute;
 		width: 100%;
 		height: 100%;
 		z-index: -9;
-
-		.car1 {
-			position: absolute;
-			right: 90px;
-		}
 
 		.car2 {
 			position: absolute;
@@ -417,8 +434,8 @@
 		margin-bottom: 150px;
 		flex-direction: column;
 		align-items: center;
-		width: 700px;
-		height: 800px;
+		max-width: 700px;
+		// height: 800px;
 		border-radius: 8px;
 		background-color: #fff;
 		box-shadow: 3px 3px 60px #00000012;
@@ -435,18 +452,20 @@
 
 				.upper-title {
 					text-transform: none;
-					font-size: 0.6em;
-				}
-
-				.form-text {
-					font-family: var(--open-sans);
-					font-weight: lighter;
-					font-size: 20px;
-					color: var(--lighter-gray);
-					text-align: left;
+					margin-left: 5px;
+					font-size: 0.5em;
 				}
 			}
+
+			.form-text {
+				font-family: var(--open-sans);
+				font-weight: lighter;
+				font-size: 18px;
+				color: var(--lighter-gray);
+				text-align: left;
+			}
 		}
+
 		.input-form {
 			.form-subtitle {
 				margin-top: 70px;
@@ -459,32 +478,45 @@
 
 			.input-radio {
 				display: flex;
-				margin: 20px;
+				margin-bottom: 10px;
+				margin-top: 10px;
 				font-family: var(--open-sans);
 				font-weight: normal;
 				color: var(--lighter-gray);
 
+				& div {
+					margin-right: 1.3em;
+					display: flex;
+				}
 				input {
-					height: 23px;
-					margin-right: 4px;
+					//  height: 23px;
+					width: 1.35em;
+					height: 1.35em;
+					margin-right: 10px;
 				}
 			}
-			.row {
+
+			.form-inputs {
 				font-family: var(--open-sans);
 				font-weight: normal;
 				color: var(--gray);
 				font-style: 10px;
+				display: flex;
+				flex-direction: column;
 
 				.row-input {
 					margin-top: 10px;
 					margin-bottom: 10px;
-					margin-left: 20px;
+					padding: 15px;
+					font-size: 0.8em;
+					// margin-left: 20px;
 					height: 45px;
-					width: 70%;
+					//   width: 70%;
 					border: 1px solid var(--footer-gray);
 				}
 			}
 		}
+
 		.form-send {
 			padding: 15px 80px;
 			margin-top: 40px;
@@ -521,12 +553,14 @@
 			text-transform: uppercase;
 			color: var(--white);
 		}
+
 		.page-subtitle {
 			font-family: var(--roboto);
 			font-size: 13px;
 			text-align: center;
 			color: var(--white);
 		}
+
 		.agree-button {
 			margin-top: 60px;
 			height: 50px;
@@ -637,6 +671,7 @@
 			}
 		}
 	}
+
 	.footer-white {
 		width: 100%;
 		margin-right: auto;
@@ -669,34 +704,67 @@
 }
 
 // breakpoint
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 375px) {
+	.car1,
+	.car2 {
+		display: none !important;
+	}
+}
 
 @media screen and (max-width: 768px) and (min-width: 375px) {
+	.form-square {
+		box-shadow: none !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		margin-bottom: 0 !important;
+		margin-top: 0 !important;
+	}
+	.car1 {
+		position: relative !important;
+		left: -20em !important;
+	}
+
+	.car2 {
+		position: relative !important;
+		left: 10em !important;
+	}
+
+	.form-container {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.carousel {
 		// height: 100vh;
 		.underline {
 			width: 600px;
 		}
+
 		.nav {
 			margin-top: 20px;
 			margin-left: 70px;
 			margin-right: 70px;
 		}
+
 		.title {
 			margin-top: 100px;
 			margin-left: 140px;
+
 			.title-bmw-i {
 				font-size: 24px;
 			}
 		}
+
 		.visit-button {
 			.button-square {
 				padding: 8px 40px;
 			}
 		}
+
 		.carousel-indicators {
 			margin-left: 70px;
 			padding-bottom: 20px;
+
 			.indicator-size {
 				width: 30px;
 				height: 4px;
@@ -711,15 +779,18 @@
 		.bgc-figures {
 			display: none;
 		}
+
 		.bgc-car {
 			display: none;
 		}
+
 		.form-square {
-			width: 500px;
-			height: 700px;
+			//  width: 500px;
+			//  height: 700px;
 			border-radius: 0;
-			background-color: transparent;
+			//  background-color: transparent;
 			box-shadow: none;
+
 			.form-title {
 				.header-title {
 					font-size: 24px;
@@ -729,11 +800,13 @@
 					}
 				}
 			}
+
 			.input-form {
 				.form-subtitle {
 					margin-top: 30px;
 					font-size: 14px;
 				}
+
 				.row {
 					.row-input {
 						margin-top: 5px;
@@ -741,6 +814,7 @@
 					}
 				}
 			}
+
 			.form-send {
 				margin-top: 20px;
 			}
@@ -749,6 +823,7 @@
 	.footer-nav {
 		display: flex;
 		justify-content: center;
+
 		.footer-container-2 {
 			justify-content: center;
 			margin-left: 0px;
@@ -758,21 +833,29 @@
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
+	.car1 {
+		right: -10em !important;
+	}
+
 	.carousel {
 		.underline {
 			width: 600px;
 		}
+
 		.nav {
 			margin-top: 20px;
 			margin-left: 100px;
 			margin-right: 100px;
 		}
+
 		.title {
 			margin-top: 150px;
+
 			.title-bmw-i {
 				font-size: 36px;
 			}
 		}
+
 		.visit-button {
 			.button-square {
 				padding: 10px 65px;
@@ -789,31 +872,38 @@
 				bottom: 200px;
 				left: 70px;
 			}
+
 			.figure2 {
 				top: 50px;
 				left: 90px;
 			}
+
 			.figure3 {
 				display: none;
 			}
+
 			.figure4 {
 				right: 90px;
 				top: 150px;
 			}
 		}
+
 		.bgc-car {
 			.car1 {
 				display: none;
 			}
+
 			.car2 {
 				bottom: 120px;
 				left: 60px;
 			}
 		}
+
 		.form-square {
 			padding: 70px;
-			width: 600px;
-			height: 700px;
+			// width: 600px;
+			// height: 700px;
+
 			.form-title {
 				.header-title {
 					font-size: 24px;
@@ -823,11 +913,13 @@
 					}
 				}
 			}
+
 			.input-form {
 				.form-subtitle {
 					margin-top: 30px;
 					font-size: 14px;
 				}
+
 				.row {
 					.row-input {
 						margin-top: 5px;
@@ -835,6 +927,7 @@
 					}
 				}
 			}
+
 			.form-send {
 				margin-top: 20px;
 			}
@@ -843,6 +936,7 @@
 	.footer-nav {
 		display: flex;
 		justify-content: center;
+
 		.footer-container-2 {
 			margin-left: 20px;
 			padding: 10px !important;
@@ -851,6 +945,9 @@
 }
 
 @media screen and (max-width: 1200px) and (min-width: 992px) {
+	.car1 {
+		right: -2em !important;
+	}
 	.title {
 		.title-bmw-i {
 			font-size: 70px;
@@ -871,23 +968,28 @@
 				bottom: 200px;
 				left: 100px;
 			}
+
 			.figure2 {
 				top: 50px;
 				left: 150px;
 			}
+
 			.figure3 {
 				bottom: -200px;
 				left: 400px;
 			}
+
 			.figure4 {
 				right: 130px;
 				top: 150px;
 			}
 		}
+
 		.bgc-car {
 			.car1 {
 				right: 0px;
 			}
+
 			.car2 {
 				bottom: 120px;
 				left: 60px;
@@ -897,6 +999,7 @@
 	.footer-nav {
 		display: flex;
 		justify-content: center;
+
 		.footer-container-2 {
 			margin-left: 20px;
 			padding: 10px !important;
