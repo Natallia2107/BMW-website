@@ -22,12 +22,15 @@
 	padding: 0;
 }
 
+// carousel
 .carousel {
+	// display: none;
 	.underline {
 		margin-top: 20px;
 		width: 70vw;
 		height: 1px;
 		background-color: var(--gray);
+		display: none;
 	}
 
 	// nav
@@ -189,27 +192,30 @@
 .header-nav-burger {
 	background-color: var(--black);
 	height: 100vh;
+	width: 100%;
 	display: none;
 
 	.nav-burger {
 		display: grid;
 
 		.logo-bmw {
-			margin-top: 20px;
-			margin-left: 300px;
+			margin-top: 30px;
+			margin-left: auto;
+			padding-right: 20px;
 		}
 
 		.underline-burger {
 			margin-top: 30px;
 			height: 1px;
-			width: 300px;
+			width: 80%;
 			background-color: var(--gray);
 			align-items: start;
 		}
 
 		.nav-close {
-			margin-top: 15px;
-			margin-left: 320px;
+			margin-top: 20px;
+			margin-left: auto;
+			padding-right: 40px;
 			color: var(--gray);
 			font-size: 30px;
 			cursor: pointer;
@@ -355,13 +361,15 @@
 }
 
 // gallery mobile
-.container-gallery-mobile {
-	margin: 100px auto;
-	padding: 0;
-	.row {
-		margin: 20px;
-		.side-car {
-			height: 100%;
+.container {
+	.gallery-bmw-mobile {
+		margin: 100px auto;
+		padding: 0;
+		.row {
+			margin: 20px;
+			.side-car {
+				height: 100%;
+			}
 		}
 	}
 }
@@ -649,7 +657,8 @@
 
 			.footer-container-2 {
 				// flex: 1;
-				padding-left: 150px;
+				// padding-left: 150px;
+				padding-left: 90px;
 				padding-right: 50px;
 				padding-bottom: 70px;
 
@@ -712,61 +721,43 @@
 // breakpoint
 @media screen and (max-width: 480px) {
 	.gallery-bmw-desktop {
-		.img-gallery-desktop {
-			display: none;
-		}
+		display: none;
 	}
 	.car1,
 	.car2 {
 		display: none !important;
 	}
+	.header-nav-burger {
+		display: block;
+	}
+	.section {
+		.section-icon {
+			margin: 20px 0 10px 0;
+		}
+
+		&.section-fact {
+			.facts-box {
+				grid-template-columns: repeat(1, 80%);
+				gap: 10px;
+
+				.underline-light {
+					width: 80%;
+				}
+
+				.fact-text {
+					font-size: 16px;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
 	.gallery-bmw-desktop {
-		.img-gallery-desktop {
-			display: none;
-		}
+		display: none !important;
 	}
 	.header-nav-burger {
 		display: block;
-	
-		.nav-burger {
-			.logo-bmw {
-				margin-top: 30px;
-				margin-left: 650px;
-			}
-	
-			.underline-burger {
-				margin-top: 30px;
-				width: 600px;
-			}
-	
-			.nav-close {
-				margin-top: 20px;
-				margin-left: 668px;
-			}
-	
-			.nav-links-box {
-				.nav-link {
-					font-size: 25px;
-					
-					.decor-none {
-						text-transform: none;
-					}
-				}
-			}
-	
-			.nav-button {
-				.test-drive-burger {
-					padding: 25px 60px;
-	
-					.test-drive-burger-text {
-						font-size: 20px;
-					}
-				}
-			}
-		}
 	}
 
 	.form-square {
@@ -794,7 +785,7 @@
 	.carousel {
 		// height: 100vh;
 		.underline {
-			width: 600px;
+			width: 76vh;
 		}
 
 		.nav {
@@ -828,9 +819,25 @@
 			}
 		}
 	}
-	.facts-box {
-		grid-template-columns: repeat(3, 160px);
-		grid-template-rows: repeat(2, 110px);
+	.section {
+		.section-icon {
+			margin: 20px 0 10px 0;
+		}
+
+		&.section-fact {
+			.facts-box {
+				grid-template-columns: repeat(1, 80%);
+				gap: 10px;
+
+				.underline-light {
+					width: 80%;
+				}
+
+				.fact-text {
+					font-size: 16px;
+				}
+			}
+		}
 	}
 	.form-container {
 		.bgc-figures {
@@ -877,26 +884,38 @@
 			}
 		}
 	}
-	.footer-nav {
-		display: flex;
-		justify-content: center;
-
-		.footer-container-2 {
-			justify-content: center;
-			margin-left: 0px;
-			padding: 0 !important;
+	.footer-container {
+		.footer-upper {
+			align-items: center;
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.share-header {
+			margin-right: 0px;
+		}
+		.footer-nav {
+			.footer-container-2 {
+				margin-left: 0 !important;
+				padding-right: 0 !important;
+				padding-bottom: 0 !important;
+			}
 		}
 	}
 }
 
 @media screen and (max-width: 992px) and (min-width: 769px) {
+	.container {
+		.gallery-bmw-mobile {
+			display: none;
+		}
+	}
 	.car1 {
 		right: -10em !important;
 	}
 
 	.carousel {
 		.underline {
-			width: 600px;
+			width: 100vh;
 		}
 
 		.nav {
@@ -1002,6 +1021,11 @@
 }
 
 @media screen and (max-width: 1200px) and (min-width: 993px) {
+	.container {
+		.gallery-bmw-mobile {
+			display: none;
+		}
+	}
 	.car1 {
 		right: -2em !important;
 	}
@@ -1060,6 +1084,14 @@
 		.footer-container-2 {
 			margin-left: 20px;
 			padding: 10px !important;
+		}
+	}
+}
+
+@media screen and (min-width: 1201px) {
+	.container {
+		.gallery-bmw-mobile {
+			display: none;
 		}
 	}
 }
