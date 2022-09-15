@@ -66,14 +66,16 @@
 		.logo-bmw {
 			text-align: right;
 		}
-		.logo-bmw img {
-			width: 40px;
-			height: auto;
-			//	margin-top: 10px;
-			//	margin-left: auto;
-			//	width: 0px;
-			//	height: 10px;
-			//	background: transparent url(/img/bmw_logo.svg) 0% 0% no-repeat padding-box;
+		.logo-bmw {
+			img {
+				width: 40px;
+				height: auto;
+				//	margin-top: 10px;
+				//	margin-left: auto;
+				//	width: 0px;
+				//	height: 10px;
+				//	background: transparent url(/img/bmw_logo.svg) 0% 0% no-repeat padding-box;
+			}
 		}
 
 		.nav-subtitle-text {
@@ -196,13 +198,12 @@
 }
 
 // burger icon
-
 .bmw-logo-mobile {
+	display: none;
 	position: absolute;
 	top: 20px;
-	left: 20px;
-	width: 36px;
-	height: 36px;
+	right: 20px;
+	width: 60px;
 	border: none;
 	background-color: transparent;
 	color: #fff;
@@ -211,11 +212,10 @@
 	z-index: 1000;
 }
 .ham {
+	display: none;
 	position: absolute;
 	top: 20px;
 	left: 20px;
-	width: 36px;
-	height: 36px;
 	border: none;
 	background-color: transparent;
 	color: #fff;
@@ -847,6 +847,12 @@
 }
 
 @media screen and (max-width: 768px) {
+	.bmw-logo-mobile {
+		display: unset !important;
+	}
+	.ham {
+		display: unset !important;
+	}
 	.carousel {
 		.carousel-inner {
 			img {
