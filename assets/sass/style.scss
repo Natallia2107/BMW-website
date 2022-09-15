@@ -54,6 +54,11 @@
 		.nav-bmw {
 			color: var(--white);
 			cursor: pointer;
+			text-decoration: none;
+
+			span:hover {
+				filter: brightness(80%);
+			}
 		}
 
 		.test-drive {
@@ -61,6 +66,10 @@
 			text-decoration: none;
 			cursor: pointer;
 			color: var(--white);
+
+			span:hover {
+				filter: brightness(80%);
+			}
 		}
 
 		.logo-bmw {
@@ -159,7 +168,6 @@
 		z-index: 1000;
 		cursor: pointer;
 
-
 		:hover {
 			filter: brightness(80%);
 		}
@@ -169,6 +177,7 @@
 			background-color: var(--bmw-blue);
 			color: var(--white);
 			font-size: .9em;
+			text-align: center;
 			text-transform: uppercase;
 			text-decoration:none;
 			border: none;
@@ -929,10 +938,11 @@
 	.carousel {
 		.carousel-inner {
 			img {
-				height: 70vh;
+				height: 100vh;
 				width: auto;
 				background-size: initial;
 				object-fit: cover;
+				object-position: 73%;
 			}
 		}
 		.title {
@@ -943,7 +953,6 @@
 			top: unset;
 			left: 50%;
 			right: unset;
-			bottom: 0;
 			margin: 0 !important;
 			padding: 0 !important;
 			position: absolute;
@@ -951,6 +960,13 @@
 			left: 0;
 			display: flex;
 			justify-content: center !important;
+			bottom: 8vh;
+		}
+
+		.visit-button {
+			bottom: 15vh;
+			width: 100%;
+			padding: 15px 70px;
 		}
 		.nav {
 			display: none;
@@ -1005,15 +1021,8 @@
 			}
 		}
 
-		.visit-button {
-			.button-square {
-				padding: 8px 40px;
-			}
-		}
-
 		.carousel-indicators {
 			margin-left: 70px;
-			padding-bottom: 20px;
 
 			.indicator-size {
 				width: 30px;
@@ -1114,7 +1123,7 @@
 
 	.carousel {
 		.underline {
-			width: 100vh;
+			width: 100%;
 		}
 
 		.nav {
@@ -1308,8 +1317,15 @@
 	}
 }
 
-
 .disable-scroll {
 	height: 100%;
 	overflow: hidden;
+}
+
+.carousel {
+	.carousel-inner {
+		img {
+			width: 100vw;
+		}
+	}
 }
