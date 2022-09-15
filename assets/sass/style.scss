@@ -342,7 +342,7 @@
 	}
 }
 
-// main gallery
+// gallery desktop
 .gallery-bmw-desktop {
 	.img-gallery-desktop {
 		margin: 0;
@@ -351,6 +351,18 @@
 		padding-right: 10px;
 		padding-left: 10px;
 		width: 100%;
+	}
+}
+
+// gallery mobile
+.container-gallery-mobile {
+	margin: 100px auto;
+	padding: 0;
+	.row {
+		margin: 20px;
+		.side-car {
+			height: 100%;
+		}
 	}
 }
 

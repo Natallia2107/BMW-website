@@ -321,6 +321,17 @@
   width: 100%;
 }
 
+.container-gallery-mobile {
+  margin: 100px auto;
+  padding: 0;
+}
+.container-gallery-mobile .row {
+  margin: 20px;
+}
+.container-gallery-mobile .row .side-car {
+  height: 100%;
+}
+
 .form-container {
   position: relative;
   overflow: hidden;
