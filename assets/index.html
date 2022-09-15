@@ -80,9 +80,9 @@
         </div>
     </div>
 
-     <!-- burger menu page -->
+    <!-- burger menu page -->
     <div class="header-nav-burger">
-         <div class="nav-burger">
+        <div class="nav-burger">
             <div class="logo-bmw"><img src="/img/bmw_logo.svg" alt="logo BMW"></div>
             <div class="underline-burger"></div>
             <div class="nav-close">
@@ -101,8 +101,8 @@
                     <a class="test-drive-burger-text" href="#test-drive">umów jazdę próbną</a>
                 </button>
             </div>
-         </div>
-     </div>
+        </div>
+    </div>
 
 
 
@@ -199,42 +199,44 @@
         <img src="/img/d_gallery.png" alt="galeria zdjęć samochodów marki BMW" class="img-gallery">
     </div>
 
-    <!-- form test drive-->
-    <div class="form-container" id="test-drive">
-        <div class="bgc-figures">
-            <img src="/img/Path 12.svg" alt="figura 1" class="figure1">
-            <img src="/img/Path 13.svg" alt="figura 2" class="figure2">
-            <img src="/img/Path 14.svg" alt="figura 3" class="figure3">
-            <img src="/img/Path 15.svg" alt="figura 4" class="figure4">
-        </div>
-        <div class="bgc-car">
-            <img src="/img/bmw-ix-front.png" alt="przód samochodu BMW iX" class="car1">
-            <img src="/img/13273-2022-bmw-ix.png" alt="bok samochodu BMW iX" class="car2">
-        </div>
-
-        <div class="form-square">
-            <div class="form-title">
-                <h2 class="header-title">Umów jazdę próbną
-                    <span class="upper-title">BMW iX</span>
-                </h2>
-                <p class="form-text">Zachęcamy do ograniczenia poruszania sie i pozostania w domu.</p>
-                <p class="form-text">Jeśli jednak jazda testowa okaże się niezbędna prosimy o wypełnienie poniższego
-                    formularza.</p>
+    <div class="container-fluid form-container" id="test-drive">
+        <div class="row">
+            <div class="bgc-figures" style="display: none">
+                <img src="/img/Path 12.svg" alt="figura 1" class="figure1">
+                <img src="/img/Path 13.svg" alt="figura 2" class="figure2">
+                <img src="/img/Path 14.svg" alt="figura 3" class="figure3">
+                <img src="/img/Path 15.svg" alt="figura 4" class="figure4">
             </div>
-            <div class="input-form">
-                <div class="form-subtitle">Wypełnij formularz swoimi danymi.</div>
-                <fieldset class="input-radio">
-                    <input type="radio" name="gender"> Pan
-                    <input type="radio" name="gender"> Pani
-                </fieldset>
-                <div class="row">
-                    <input type="text" placeholder="Imię*" class="row-input">
-                    <input type="text" placeholder="Nazwisko*" class="row-input">
-                    <input type="text" placeholder="E-mail*" class="row-input">
-                    <input type="text" placeholder="Numer telefonu*" class="row-input">
+            <div>
+                <img src="/img/bmw-ix-front.png" alt="przód samochodu BMW iX" class="car1">
+            </div>
+            <div class="col-md-6 form-square">
+                <div class="form-title">
+                    <h2 class="header-title">Umów jazdę próbną
+                        <span class="upper-title">BMW iX</span>
+                    </h2>
+                    <p class="form-text">Zachęcamy do ograniczenia poruszania sie i pozostania w domu.</p>
+                    <p class="form-text">Jeśli jednak jazda testowa okaże się niezbędna prosimy o wypełnienie poniższego
+                        formularza.</p>
                 </div>
+                <div class="input-form row">
+                    <div class="form-subtitle">Wypełnij formularz swoimi danymi.</div>
+                    <fieldset class="input-radio">
+                        <div><input type="radio" name="gender">Pan</div>
+                        <div><input type="radio" name="gender"> Pani</div>
+                    </fieldset>
+                    <div class="form-inputs">
+                        <input type="text" placeholder="Imię*" class="row-input">
+                        <input type="text" placeholder="Nazwisko*" class="row-input">
+                        <input type="text" placeholder="E-mail*" class="row-input">
+                        <input type="text" placeholder="Numer telefonu*" class="row-input">
+                    </div>
 
-                <button class="form-send">Wyślij</button>
+                    <button class="form-send">Wyślij</button>
+                </div>
+            </div>
+            <div>
+                <img src="/img/13273-2022-bmw-ix.png" alt="bok samochodu BMW iX" class="car2">
             </div>
         </div>
     </div>
@@ -248,7 +250,7 @@
         </div>
     </div>
 
-   
+
     <!-- footer -->
     <div class="footer-container">
         <div class="footer-upper footer-border">
