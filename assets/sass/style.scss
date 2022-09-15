@@ -225,14 +225,27 @@
 	background-size: 100%;
 	cursor: pointer;
 	z-index: 1000;
+
+	/* change ham image to close */
+	&.showClose {
+		//background-image: url('https://ljc-dev.github.io/testing0/ham-close.svg');
+		color: var(--white);
+		z-index: 10000;
+
+		.on {
+			display: none;
+		}
+		.off {
+			display: unset;
+			margin-left: 5px;
+		}
+	}
+
+	.off {
+		display: none;
+	}
 }
 
-/* change ham image to close */
-.showClose {
-	background-image: url('https://ljc-dev.github.io/testing0/ham-close.svg');
-	color: var(--white);
-	z-index: 10000;
-}
 
 .navbar-burger {
 	position: absolute;
