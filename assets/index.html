@@ -21,6 +21,8 @@
     <script src="https://kit.fontawesome.com/6778ed8121.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 
@@ -33,14 +35,22 @@
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <!-- nav -->
             <div class="nav">
-                <div class="nav-bmw">Nowe BMW iX </div>
-                <a class="test-drive" href="#test-drive">Umów jazdę próbną</a>
-                <div class="logo-bmw"><img src="/img/bmw_logo.svg" alt="logo BMW"></div>
-
+                <div class="col-6 d-flex">
+                    <div class="nav-bmw">Nowe BMW iX </div>
+                    <a class="test-drive" href="#test-drive">Umów jazdę próbną</a>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="logo-bmw"><img src="/img/bmw_logo.svg" alt="logo BMW"></div>
+                    </div>
+                    <!--   <div class="underline"></div> -->
+                </div>
                 <div class="underline"></div>
-                <div class="nav-subtitle-text">
-                    <div class="nav-subtitle">Radość
-                        <span class="nav-subtitle-continue">z jazdy</span>
+                <div class="col-12">
+                    <div class="nav-subtitle-text">
+                        <div class="nav-subtitle">Radość
+                            <span class="nav-subtitle-continue">z jazdy</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -68,17 +78,32 @@
             <!-- carousel img -->
             <div class="carousel-inner hero-shadow">
                 <div class="carousel-item active">
-                    <img src="/img/slider1.png" class=" w-100 hero-shadow" alt="Czerwone BMW iX">
+                    <img src="/img/slider1.png" class="img-fluid hero-shadow" alt="Czerwone BMW iX">
                 </div>
                 <div class="carousel-item">
-                    <img src="/img/slider1.png" class=" w-100 hero-shadow" alt="Czerwone BMW iX">
+                    <img src="/img/slider1.png" class="img-fluid hero-shadow" alt="Czerwone BMW iX">
                 </div>
                 <div class="carousel-item">
-                    <img src="/img/slider1.png" class=" w-100 hero-shadow" alt="Czerwone BMW iX">
+                    <img src="/img/slider1.png" class="img-fluid hero-shadow" alt="Czerwone BMW iX">
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="bmw-logo-mobile">
+        <img src="/img/bmw_logo.svg" alt="logo BMW" class="img-fluid">
+    </div>
+    <!-- burger icon -->
+    <button class="ham">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <nav class="navbar-burger">
+        <ul>
+            <li><a class="menuLink" href="#new-bmw">nowe bmw ix</a></li>
+            <li><a class="menuLink" href="#facts">innowacyjna aerodynamika</a></li>
+            <li><a class="menuLink" href="#gallery">galeria</a></li>
+        </ul>
+    </nav>
 
     <!-- burger menu page -->
     <div class="header-nav-burger">
@@ -108,7 +133,7 @@
 
     <!-- section with info -->
     <!-- section 1 -->
-    <div class="container section section-fact">
+    <div class="container section section-fact" id="new-bmw">
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <div class="row">
@@ -165,29 +190,31 @@
     </div>
 
     <!-- section 2 -->
-    <div class="container section section-text">
+    <div class="container section section-text" id="facts">
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <img src="/img/ico_2.svg" alt="ikona samochodu">
-            </div>
-            <h1 class="section-title">INNOWACYJNA <br>AERODYNAMIKA <br>BMW iX.</h1>
-            <div class="text-box">
-                <div class="text-fun-fuct">BMW iX w każdym milimetrze swojej dynamicznej stylistyki wdraża zasadę "forma
-                    podąża za funkcją".</div>
-                <div class="text-description">Widać to przede wszystkim po gładkiej karoserii ze zwężoną nadbudową
-                    kabiny i zredukowanymi fugami oraz po płaskim podwoziu. W połączeniu z zamkniętym przodem oraz
-                    dyfuzorem z tyłu i niezwykłymi detalami, takimi jak wpuszczane klamki czy zintegrowane z listwami
-                    szybowymi lusterka zewnętrzne, BMW iX osiąga doskonały współczynnik Cx wynoszący zaledwie 0,25.
-                    Dzięki temu łączy w sobie zasięg i wydajność z innowacyjną konstrukcją SAV-a.</div>
-            </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-            <div class="row">
-                <div class="col-7 mt-5">
-                    <img class="img-fluid" src="/img/foto2_1.png">
+                <h1 class="section-title">INNOWACYJNA <br>AERODYNAMIKA <br>BMW iX.</h1>
+                <div class="text-box">
+                    <div class="text-fun-fuct">BMW iX w każdym milimetrze swojej dynamicznej stylistyki wdraża zasadę
+                        "forma
+                        podąża za funkcją".</div>
+                    <div class="text-description">Widać to przede wszystkim po gładkiej karoserii ze zwężoną nadbudową
+                        kabiny i zredukowanymi fugami oraz po płaskim podwoziu. W połączeniu z zamkniętym przodem oraz
+                        dyfuzorem z tyłu i niezwykłymi detalami, takimi jak wpuszczane klamki czy zintegrowane z
+                        listwami
+                        szybowymi lusterka zewnętrzne, BMW iX osiąga doskonały współczynnik Cx wynoszący zaledwie 0,25.
+                        Dzięki temu łączy w sobie zasięg i wydajność z innowacyjną konstrukcją SAV-a.</div>
                 </div>
-                <div class="col-5">
-                    <img class="img-fluid" src="/img/foto2_2@2x.png">
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="row">
+                    <div class="col-7 mt-5">
+                        <img class="img-fluid" src="/img/foto2_1.png">
+                    </div>
+                    <div class="col-5">
+                        <img class="img-fluid" src="/img/foto2_2@2x.png">
+                    </div>
                 </div>
             </div>
         </div>
@@ -195,22 +222,27 @@
     </div>
 
     <!-- gallery desktop -->
-    <div class="gallery-bmw-desktop">
+    <div class="gallery-bmw-desktop" id="gallery">
         <img src="/img/d_gallery.png" alt="galeria zdjęć samochodów marki BMW" class="img-gallery-desktop">
     </div>
     <!-- gallery mobile -->
-    <div class="container">
+    <div class="container" id="gallery">
         <div class="gallery-bmw-mobile">
             <div class="row">
-                <div class="col-12"><img src="/img/NoPath — kopia (8).png" alt="deska rozdzielcza samochodu BMW" class="img-fluid img-gallery-mobile"></div>
+                <div class="col-12"><img src="/img/NoPath — kopia (8).png" alt="deska rozdzielcza samochodu BMW"
+                        class="img-fluid img-gallery-mobile"></div>
             </div>
             <div class="row">
-                <div class="col-4"><img src="/img/NoPath — kopia (17).png" alt="lewy bok samochodu BMW" class="img-fluid img-gallery-mobile side-car"></div>
-                <div class="col-8"><img src="/img/NoPath — kopia (16).png" alt="czerwone BMW iX" class="img-fluid img-gallery-mobile"></div>
+                <div class="col-4"><img src="/img/NoPath — kopia (17).png" alt="lewy bok samochodu BMW"
+                        class="img-fluid img-gallery-mobile side-car"></div>
+                <div class="col-8"><img src="/img/NoPath — kopia (16).png" alt="czerwone BMW iX"
+                        class="img-fluid img-gallery-mobile"></div>
             </div>
             <div class="row">
-                <div class="col-6"><img src="/img/NoPath — kopia (9).png" alt="tylne fotele samochodu BMW" class="img-fluid img-gallery-mobile"></div>
-                <div class="col-6"><img src="/img/NoPath — kopia (10).png" alt="tył samochodu BMW" class="img-fluid img-gallery-mobile"></div>
+                <div class="col-6"><img src="/img/NoPath — kopia (9).png" alt="tylne fotele samochodu BMW"
+                        class="img-fluid img-gallery-mobile"></div>
+                <div class="col-6"><img src="/img/NoPath — kopia (10).png" alt="tył samochodu BMW"
+                        class="img-fluid img-gallery-mobile"></div>
             </div>
         </div>
     </div>
@@ -249,7 +281,7 @@
                         <input type="text" placeholder="Numer telefonu*" class="row-input">
                     </div>
 
-                    <button class="form-send">Wyślij</button>
+                    <button class="form-send" id="form-btn-send">Wyślij</button>
                 </div>
             </div>
             <div>
@@ -259,12 +291,14 @@
     </div>
 
     <!-- page displayed after sending the form -->
-    <div class="page-container">
-        <div class="text-btn-container">
+    <div id="thank-you-modal">
+        <div class="page-container">
+        <div class=" text-btn-container">
             <div class="page-title">Dziękujemy</div>
             <div class="page-subtitle">Skontaktujemy się z Tobą w najbliższym <br> możliwym terminie.</div>
             <button class="agree-button">ok</button>
         </div>
+    </div>
     </div>
 
 
@@ -330,7 +364,7 @@
         </section>
         <div class="footer-white">
             <section class="footer-copy">
-                <span class="copy-bmw">&copy; BMW Polska 2020</span>
+                <span class="copy-bmw">&copy; BMW Polska <span class="footer__year"></span></span>
             </section>
         </div>
     </div>

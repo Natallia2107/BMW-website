@@ -22,19 +22,21 @@
 
 .carousel .underline {
   margin-top: 20px;
-  width: 70vw;
+  width: 100%;
   height: 1px;
   background-color: var(--gray);
-  display: none;
 }
 .carousel .nav {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 30px;
-  margin-left: 200px;
-  margin-right: 200px;
   font-size: 12px;
   font-family: var(--cairo);
   text-align: left;
@@ -42,7 +44,7 @@
   letter-spacing: 0.9px;
   color: var(--white);
   opacity: 1;
-  z-index: 1000000;
+  z-index: 1000;
 }
 .carousel .nav .nav-bmw {
   color: var(--white);
@@ -55,14 +57,14 @@
   color: var(--white);
 }
 .carousel .nav .logo-bmw {
-  margin-top: 10px;
-  margin-left: auto;
-  width: 0px;
-  height: 10px;
-  background: transparent url(/img/bmw_logo.svg) 0% 0% no-repeat padding-box;
+  text-align: right;
+}
+.carousel .nav .logo-bmw img {
+  width: 40px;
+  height: auto;
 }
 .carousel .nav .nav-subtitle-text {
-  margin-top: 20px;
+  margin-top: 5px;
   margin-left: auto;
   font-size: 10px;
   font-family: var(--cairo);
@@ -108,7 +110,7 @@
   letter-spacing: 0.9px;
   color: var(--white);
   opacity: 1;
-  z-index: 1000000;
+  z-index: 1000;
 }
 .carousel .title .logi-i {
   margin-top: 400px;
@@ -149,7 +151,7 @@
   margin-left: 15%;
   list-style: none;
   opacity: 1;
-  z-index: 1000000;
+  z-index: 1000;
   cursor: pointer;
 }
 .carousel .visit-button .button-square {
@@ -173,6 +175,95 @@
   bottom: 0;
   background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(70%, rgba(0, 0, 0, 0.64)));
   background: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.64) 70%);
+}
+
+.bmw-logo-mobile {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  background-size: 100%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.ham {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  background-size: 100%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* change ham image to close */
+.showClose {
+  background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+  color: var(--white);
+  z-index: 10000;
+}
+
+.navbar-burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  z-index: 1000;
+}
+.navbar-burger ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar-burger ul li a {
+  color: white;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+}
+
+.showNav {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.navbar-burger ul li a:hover,
+.navbar-burger ul li a:focus {
+  border-bottom: 2px solid white;
 }
 
 .header-nav-burger {
@@ -497,13 +588,22 @@
   letter-spacing: 0.9px;
 }
 
+#thank-you-modal {
+  display: none;
+}
+
 .page-container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
   background-color: rgba(1, 0, 2, 0.6352941176);
-  display: none;
 }
 .page-container .text-btn-container {
   display: -webkit-box;
@@ -713,6 +813,39 @@
     font-size: 16px;
   }
 }
+@media screen and (max-width: 768px) {
+  .carousel .carousel-inner img {
+    height: 70vh;
+    width: auto;
+    background-size: initial;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .carousel .title {
+    margin-top: 20vh;
+    margin-left: 30px;
+  }
+  .carousel .carousel-indicators {
+    top: unset;
+    left: 50%;
+    right: unset;
+    bottom: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .carousel .nav {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) and (min-width: 481px) {
   .gallery-bmw-desktop {
     display: none !important;
@@ -752,10 +885,6 @@
     margin-top: 20px;
     margin-left: 70px;
     margin-right: 70px;
-  }
-  .carousel .title {
-    margin-top: 100px;
-    margin-left: 140px;
   }
   .carousel .title .title-bmw-i {
     font-size: 24px;
@@ -964,4 +1093,16 @@
   .container .gallery-bmw-mobile {
     display: none;
   }
+}
+.hamburger {
+  position: absolute;
+  top: 3em;
+  left: 1em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 500;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  background-color: var(--white);
+  z-index: 500;
 }/*# sourceMappingURL=style.css.map */
