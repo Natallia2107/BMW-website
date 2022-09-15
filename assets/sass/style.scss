@@ -70,11 +70,6 @@
 			img {
 				width: 40px;
 				height: auto;
-				//	margin-top: 10px;
-				//	margin-left: auto;
-				//	width: 0px;
-				//	height: 10px;
-				//	background: transparent url(/img/bmw_logo.svg) 0% 0% no-repeat padding-box;
 			}
 		}
 
@@ -226,9 +221,7 @@
 	cursor: pointer;
 	z-index: 1000;
 
-	/* change ham image to close */
 	&.showClose {
-		//background-image: url('https://ljc-dev.github.io/testing0/ham-close.svg');
 		color: var(--white);
 		z-index: 10000;
 
@@ -237,7 +230,6 @@
 		}
 	}
 }
-
 
 .navbar-burger {
 	position: absolute;
@@ -321,7 +313,6 @@
 			}
 
 			.underline-link {
-				// justify-content: center;
 				margin: auto;
 				height: 1px;
 				width: 250px;
@@ -365,7 +356,6 @@
 }
 
 // burger menu page
-
 .nav-burger {
 	display: grid;
 
@@ -413,7 +403,6 @@
 		}
 
 		.underline-link {
-			// justify-content: center;
 			margin: auto;
 			height: 1px;
 			width: 250px;
@@ -585,13 +574,11 @@
 		z-index: -1;
 		top: 0;
 		right: 0;
-		// left: 55%;
 	}
 
 	.car2 {
 		position: absolute;
 		z-index: -1;
-		// left: 10%;
 		left: 0;
 		bottom: 0;
 	}
@@ -619,7 +606,6 @@
 		flex-direction: column;
 		align-items: center;
 		max-width: 700px;
-		// height: 800px;
 		border-radius: 8px;
 		background-color: #fff;
 		box-shadow: 3px 3px 60px #00000012;
@@ -673,7 +659,6 @@
 					display: flex;
 				}
 				input {
-					//  height: 23px;
 					width: 1.35em;
 					height: 1.35em;
 					margin-right: 10px;
@@ -693,9 +678,7 @@
 					margin-bottom: 10px;
 					padding: 15px;
 					font-size: 0.8em;
-					// margin-left: 20px;
 					height: 45px;
-					//   width: 70%;
 					border: 1px solid var(--footer-gray);
 				}
 			}
@@ -732,8 +715,7 @@
 	top: 0;
 	display: flex;
 	height: 100vh;
-	background-color: #010002a2;
-	// display: none;
+	background-color: #010002ec;
 
 	.text-btn-container {
 		display: flex;
@@ -843,8 +825,6 @@
 			flex-wrap: wrap;
 
 			.footer-container-2 {
-				// flex: 1;
-				// padding-left: 150px;
 				padding-left: 90px;
 				padding-right: 50px;
 				padding-bottom: 70px;
@@ -1009,7 +989,6 @@
 	}
 
 	.carousel {
-		// height: 100vh;
 		.underline {
 			width: 76vh;
 		}
@@ -1072,10 +1051,7 @@
 		}
 
 		.form-square {
-			//  width: 500px;
-			//  height: 700px;
 			border-radius: 0;
-			//  background-color: transparent;
 			box-shadow: none;
 
 			.form-title {
@@ -1200,8 +1176,6 @@
 
 		.form-square {
 			padding: 70px;
-			// width: 600px;
-			// height: 700px;
 
 			.form-title {
 				.header-title {
