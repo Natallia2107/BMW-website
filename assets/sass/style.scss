@@ -225,14 +225,27 @@
 	background-size: 100%;
 	cursor: pointer;
 	z-index: 1000;
+
+	/* change ham image to close */
+	&.showClose {
+		//background-image: url('https://ljc-dev.github.io/testing0/ham-close.svg');
+		color: var(--white);
+		z-index: 10000;
+
+		.on {
+			display: none;
+		}
+		.off {
+			display: unset;
+			margin-left: 5px;
+		}
+	}
+
+	.off {
+		display: none;
+	}
 }
 
-/* change ham image to close */
-.showClose {
-	background-image: url('https://ljc-dev.github.io/testing0/ham-close.svg');
-	color: var(--white);
-	z-index: 10000;
-}
 
 .navbar-burger {
 	position: absolute;
@@ -279,6 +292,7 @@
 				flex-flow: column nowrap;
 				justify-content: space-evenly;
 				align-items: center;
+				padding-left: 0;
 
 				li a {
 					color: white;
@@ -1307,4 +1321,10 @@
 		background-color: var(--white);
 		z-index: 500;
 	}
+}
+
+
+.disable-scroll {
+	height: 100%;
+	overflow: hidden;
 }
