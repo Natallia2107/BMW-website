@@ -1,0 +1,23 @@
+{
+  "name": "bmw-website",
+  "version": "1.0.0",
+  "description": "Recruitment task :)",
+  "author": "Natalia Garbacz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Natallia2107/BMW-website.git"
+  },
+  "scripts": {
+    "css-watch": "node-sass -w assets/sass/style.scss css/style.css",
+    "prod": "npm run production",
+    "production": "node-sass assets/sass/style.scss css/style.css --output-style compressed & npm run js",
+    "js": "minify assets/js/main.js > js/main.min.js",
+    "watch": "http-server & npm run css-watch"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "minify": "^9.1.0",
+    "node-sass": "^7.0.3"
+  }
+}
