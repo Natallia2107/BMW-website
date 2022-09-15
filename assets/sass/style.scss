@@ -263,7 +263,7 @@
 
 		&.nav-body {
 			height: 100%;
-			padding-bottom: 3em;
+			padding-bottom: 150px;
 		}
 
 		.off  {
@@ -711,6 +711,11 @@
 			font-family: var(--cairo);
 			color: var(--white);
 			letter-spacing: 0.9px;
+
+			&:hover {
+				filter: brightness(80%);
+			}
+
 		}
 	}
 }
@@ -765,6 +770,9 @@
 			font-family: var(--cairo);
 			font-weight: bold;
 			letter-spacing: 0.7px;
+			&:hover {
+				filter: brightness(80%);
+			}
 		}
 	}
 }
