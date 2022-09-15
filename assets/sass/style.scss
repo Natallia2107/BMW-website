@@ -235,14 +235,6 @@
 		.on {
 			display: none;
 		}
-		.off {
-			display: unset;
-			margin-left: 5px;
-		}
-	}
-
-	.off {
-		display: none;
 	}
 }
 
@@ -267,6 +259,17 @@
 			margin-top: 30px;
 			margin-left: auto;
 			padding-right: 20px;
+		}
+
+		&.nav-body {
+			height: 100%;
+			padding-bottom: 3em;
+		}
+
+		.off  {
+			text-align: right;
+			margin-right: 37px;
+			color: var(--gray);
 		}
 
 		.underline-burger {

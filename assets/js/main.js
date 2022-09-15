@@ -52,4 +52,8 @@ $(document).ready(function () {
 		toggleHamburger()
 	})
 
+	$('.nav-mobile-off').click(function () {
+		toggleHamburger()
+	})
+
 })
