@@ -24,6 +24,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -96,11 +98,9 @@
         <i class="fa-solid fa-bars fa-3x"></i>
     </button>
     <nav class="navbar-burger">
-
         <div class="nav-burger">
             <div class="logo-bmw"><img src="/img/bmw_logo.svg" alt="logo BMW"></div>
             <div class="underline-burger"></div>
-
             <div class="nav-links-box">
                 <ul>
                     <li>
@@ -122,87 +122,15 @@
                     </li>
                 </ul>
             </div>
-
             <div class="nav-button">
                 <button class="test-drive-burger" id="#test-drive">
                     <a class="test-drive-burger-text" href="#test-drive">umów jazdę próbną</a>
                 </button>
             </div>
         </div>
-
-
     </nav>
 
-    <!-- burger menu page -->
-    <!-- <div class="header-nav-burger">
-        <div class="nav-burger">
-            <div class="logo-bmw"><img src="/img/bmw_logo.svg" alt="logo BMW"></div>
-            <div class="underline-burger"></div>
 
-            <div class="nav-links-box">
-                <ul>
-                    <li>
-                        <a class="menuLink" href="#new-bmw">
-                            <div class="nav-link">nowe bmw <span class="decor-none">iX.</span></div>
-                        </a>
-                    </li>
-                    <div class="underline-link"></div>
-                    <li>
-                        <a class="menuLink" href="#facts">
-                            <div class="nav-link">innowacyjna aerodynamika</div>
-                        </a>
-                    </li>
-                    <div class="underline-link"></div>
-                    <li>
-                        <a class="menuLink" href="#gallery">
-                            <div class="nav-link">galeria</div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-
-            <div class="nav-button">
-                <button class="test-drive-burger" id="#test-drive">
-                    <a class="test-drive-burger-text" href="#test-drive">umów jazdę próbną</a>
-                </button>
-            </div>
-        </div>
-    </div> -->
-
-
-
-
-    <!-- 
-
-    <ul>
-        <li><a class="menuLink" href="#new-bmw">nowe bmw ix</a></li>
-        <li><a class="menuLink" href="#facts">innowacyjna aerodynamika</a></li>
-        <li><a class="menuLink" href="#gallery">galeria</a></li>
-    </ul>
-
-
-    <div class="nav-links-box">
-        <ul>
-            <li>
-                <a class="menuLink" href="#new-bmw">
-                    <div class="nav-link">nowe bmw <span class="decor-none">iX.</span></div>
-                </a>
-            </li>
-            <div class="underline-link"></div>
-            <li>
-                <a class="menuLink" href="#facts">
-                    <div class="nav-link">innowacyjna aerodynamika</div>
-                </a>
-            </li>
-            <div class="underline-link"></div>
-            <li>
-                <a class="menuLink" href="#gallery">
-                    <div class="nav-link">galeria</div>
-                </a>
-            </li>
-        </ul>
-    </div> -->
 
 
     <!-- section with info -->
@@ -211,10 +139,10 @@
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <div class="row">
-                    <div class="col-5 mt-auto">
+                    <div class="col-5 mt-auto" data-aos="zoom-in" data-aos-delay="100">
                         <img class="img-fluid" src="/img/foto1_1.png">
                     </div>
-                    <div class="col-7 mb-5">
+                    <div class="col-7 mb-5" data-aos="zoom-in" data-aos-delay="150">
                         <img class="img-fluid" src="/img/foto1_2.png">
                     </div>
                 </div>
@@ -283,10 +211,10 @@
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="row">
-                    <div class="col-7 mt-5">
+                    <div class="col-7 mt-5" data-aos="zoom-in" data-aos-delay="200">
                         <img class="img-fluid" src="/img/foto2_1.png">
                     </div>
-                    <div class="col-5">
+                    <div class="col-5" data-aos="zoom-in" data-aos-delay="250">
                         <img class="img-fluid" src="/img/foto2_2@2x.png">
                     </div>
                 </div>
@@ -331,7 +259,7 @@
                 <img src="/img/Path 15.svg" alt="figura 4" class="figure4">
             </div>
             <div>
-                <img src="/img/bmw-ix-front.png" alt="przód samochodu BMW iX" class="car1">
+                <img src="/img/bmw-ix-front.png" alt="przód samochodu BMW iX" class="car1" data-aos="fade-left" data-aos-delay="100">
             </div>
             <div class="col-md-6 form-square">
                 <div class="form-title">
@@ -359,7 +287,7 @@
                 </div>
             </div>
             <div>
-                <img src="/img/13273-2022-bmw-ix.png" alt="bok samochodu BMW iX" class="car2">
+                <img src="/img/13273-2022-bmw-ix.png" alt="bok samochodu BMW iX" class="car2" data-aos="fade-right" data-aos-delay="200">
             </div>
         </div>
     </div>
@@ -443,6 +371,15 @@
 
 
     <script src="./js/main.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            offset: 200,
+            once: true
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
