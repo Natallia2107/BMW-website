@@ -33,4 +33,4 @@ Wersję live możemy znaleźć pod adresem http://bmw.garbacznatalia.cloud.
    ```sh
    npm run run-server
    ```
-5. Serwer zostanie uruchomiony na wolnym porcie, prawdopodobnie 8080. W konsoli wyświetli się adres wraz z portem, uruchamiany adres w przeglądarce :relaxed:
+5. Serwer zostanie uruchomiony na wolnym porcie, prawdopodobnie 8080. W konsoli wyświetli się adres wraz z portem, uruchamiamy adres w przeglądarce :relaxed:
