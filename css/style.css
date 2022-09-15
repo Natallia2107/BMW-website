@@ -205,7 +205,6 @@
   background-size: 100%;
   cursor: pointer;
   z-index: 1000;
-  /* change ham image to close */
 }
 .ham.showClose {
   color: var(--white);
