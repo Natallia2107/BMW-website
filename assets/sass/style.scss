@@ -279,6 +279,7 @@
 				flex-flow: column nowrap;
 				justify-content: space-evenly;
 				align-items: center;
+				padding-left: 0;
 
 				li a {
 					color: white;
@@ -1307,4 +1308,10 @@
 		background-color: var(--white);
 		z-index: 500;
 	}
+}
+
+
+.disable-scroll {
+	height: 100%;
+	overflow: hidden;
 }

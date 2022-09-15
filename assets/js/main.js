@@ -10,9 +10,14 @@ const handleCurrentYear = () => {
 handleCurrentYear()
 
 // toggles hamburger menu in and out when clicking on the hamburger
+
+function isMobileMenuEnabled() {
+	return 	navbarBurger.classList.contains('showNav');
+}
 function toggleHamburger() {
 	navbarBurger.classList.toggle('showNav')
 	ham.classList.toggle('showClose')
+	$('body').toggleClass("disable-scroll", isMobileMenuEnabled());
 }
 
 ham.addEventListener('click', toggleHamburger)
@@ -34,10 +39,17 @@ navbarBurger.addEventListener('click', checkToggle)
 
 $(document).ready(function () {
 	$('#form-btn-send').click(function () {
-		$('#thank-you-modal').fadeIn('slow')
+		$('#thank-you-modal').fadeIn('fast')
+		$('body').toggleClass("disable-scroll", true);
 	})
 
 	$('#thank-you-modal').click(function () {
-		$('#thank-you-modal').fadeOut('slow')
+		$('#thank-you-modal').fadeOut('fast')
+		$('body').toggleClass("disable-scroll", false)
 	})
+
+	$('.test-drive-burger-text').click(function () {
+		toggleHamburger()
+	})
+
 })
