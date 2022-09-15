@@ -189,7 +189,7 @@
 .header-nav-burger {
 	background-color: var(--black);
 	height: 100vh;
-	// display: none;
+	display: none;
 
 	.nav-burger {
 		display: grid;
@@ -343,8 +343,8 @@
 }
 
 // main gallery
-.gallery-bmw {
-	.img-gallery {
+.gallery-bmw-desktop {
+	.img-gallery-desktop {
 		margin: 0;
 		padding-top: 90px;
 		padding-bottom: 90px;
@@ -698,14 +698,65 @@
 }
 
 // breakpoint
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
+	.gallery-bmw-desktop {
+		.img-gallery-desktop {
+			display: none;
+		}
+	}
 	.car1,
 	.car2 {
 		display: none !important;
 	}
 }
 
-@media screen and (max-width: 768px) and (min-width: 375px) {
+@media screen and (max-width: 768px) and (min-width: 481px) {
+	.gallery-bmw-desktop {
+		.img-gallery-desktop {
+			display: none;
+		}
+	}
+	.header-nav-burger {
+		display: block;
+	
+		.nav-burger {
+			.logo-bmw {
+				margin-top: 30px;
+				margin-left: 650px;
+			}
+	
+			.underline-burger {
+				margin-top: 30px;
+				width: 600px;
+			}
+	
+			.nav-close {
+				margin-top: 20px;
+				margin-left: 668px;
+			}
+	
+			.nav-links-box {
+				.nav-link {
+					font-size: 25px;
+					
+					.decor-none {
+						text-transform: none;
+					}
+				}
+			}
+	
+			.nav-button {
+				.test-drive-burger {
+					padding: 25px 60px;
+	
+					.test-drive-burger-text {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+
 	.form-square {
 		box-shadow: none !important;
 		padding-top: 0 !important;
@@ -826,7 +877,7 @@
 	}
 }
 
-@media screen and (max-width: 992px) and (min-width: 768px) {
+@media screen and (max-width: 992px) and (min-width: 769px) {
 	.car1 {
 		right: -10em !important;
 	}
@@ -938,7 +989,7 @@
 	}
 }
 
-@media screen and (max-width: 1200px) and (min-width: 992px) {
+@media screen and (max-width: 1200px) and (min-width: 993px) {
 	.car1 {
 		right: -2em !important;
 	}

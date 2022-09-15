@@ -177,6 +177,7 @@
 .header-nav-burger {
   background-color: var(--black);
   height: 100vh;
+  display: none;
 }
 .header-nav-burger .nav-burger {
   display: grid;
@@ -311,7 +312,7 @@
   color: var(--gray);
 }
 
-.gallery-bmw .img-gallery {
+.gallery-bmw-desktop .img-gallery-desktop {
   margin: 0;
   padding-top: 90px;
   padding-bottom: 90px;
@@ -672,13 +673,46 @@
   background-color: rgb(187, 187, 187);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
+  .gallery-bmw-desktop .img-gallery-desktop {
+    display: none;
+  }
   .car1,
 .car2 {
     display: none !important;
   }
 }
-@media screen and (max-width: 768px) and (min-width: 375px) {
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .gallery-bmw-desktop .img-gallery-desktop {
+    display: none;
+  }
+  .header-nav-burger {
+    display: block;
+  }
+  .header-nav-burger .nav-burger .logo-bmw {
+    margin-top: 30px;
+    margin-left: 650px;
+  }
+  .header-nav-burger .nav-burger .underline-burger {
+    margin-top: 30px;
+    width: 600px;
+  }
+  .header-nav-burger .nav-burger .nav-close {
+    margin-top: 20px;
+    margin-left: 668px;
+  }
+  .header-nav-burger .nav-burger .nav-links-box .nav-link {
+    font-size: 25px;
+  }
+  .header-nav-burger .nav-burger .nav-links-box .nav-link .decor-none {
+    text-transform: none;
+  }
+  .header-nav-burger .nav-burger .nav-button .test-drive-burger {
+    padding: 25px 60px;
+  }
+  .header-nav-burger .nav-burger .nav-button .test-drive-burger .test-drive-burger-text {
+    font-size: 20px;
+  }
   .form-square {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
@@ -778,7 +812,7 @@
     padding: 0 !important;
   }
 }
-@media screen and (max-width: 992px) and (min-width: 768px) {
+@media screen and (max-width: 992px) and (min-width: 769px) {
   .car1 {
     right: -10em !important;
   }
@@ -858,7 +892,7 @@
     padding: 10px !important;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: 992px) {
+@media screen and (max-width: 1200px) and (min-width: 993px) {
   .car1 {
     right: -2em !important;
   }
